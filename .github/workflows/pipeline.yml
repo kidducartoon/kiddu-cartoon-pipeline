@@ -1,0 +1,76 @@
+name: Kiddu Pipeline
+
+on:
+  workflow_dispatch:
+    inputs:
+      stage:
+        description: "Pipeline stage to run"
+        required: true
+        type: choice
+        options: [create_job_0600, create_job_0800, create_job_1000, create_job_1200,
+                  create_job_1400, create_job_1600, create_job_1800, create_job_2000,
+                  script, music, animate, assemble, publish]
+  repository_dispatch:
+    types: [run_stage]
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340   # stay under GitHub's 6hr hard cap with margin
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install system audio/video deps (fluidsynth + soundfonts + ffmpeg)
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fluidsynth fluid-soundfont-gm ffmpeg
+
+      - name: Install Python deps
+        run: pip install -r requirements.txt
+
+      - name: Determine stage
+        id: determine
+        run: |
+          STAGE="${{ github.event.inputs.stage }}"
+          if [ -z "$STAGE" ]; then
+            STAGE="${{ github.event.client_payload.stage }}"
+          fi
+          echo "stage=$STAGE" >> "$GITHUB_OUTPUT"
+
+      - name: Run stage
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+          GDRIVE_SERVICE_ACCOUNT_JSON: ${{ secrets.GDRIVE_SERVICE_ACCOUNT_JSON }}
+          GDRIVE_BUFFER_FOLDER_ID: ${{ secrets.GDRIVE_BUFFER_FOLDER_ID }}
+        run: |
+          STAGE="${{ steps.determine.outputs.stage }}"
+          case "$STAGE" in
+            create_job_*)
+              TIME="${STAGE#create_job_}"
+              HHMM="${TIME:0:2}:${TIME:2:2}"
+              python3 orchestrator.py create_job "$HHMM"
+              ;;
+            *)
+              python3 orchestrator.py "$STAGE"
+              ;;
+          esac
+
+      - name: Commit updated job state
+        run: |
+          git config user.name "kiddu-pipeline-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add state/jobs.json
+          git diff --cached --quiet || git commit -m "Update pipeline state [skip ci]"
+          git push
