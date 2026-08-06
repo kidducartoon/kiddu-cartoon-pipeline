@@ -56,22 +56,17 @@ def stage_music():
             job_id = job["job_id"]
             script = job["data"]["script"]
             out_dir = WORK_DIR / "music" / job_id
-            melody_score, tempo_bpm = music_engine.build_melody(job_id, script["lyrics_lines"], script["mood"])
+            melody_score, tempo_bpm, line_quarter_lengths = music_engine.build_melody(
+                job_id, script["lyrics_lines"], script["mood"]
+            )
             midi_path = out_dir / f"{job_id}.mid"
             wav_path = out_dir / f"{job_id}_instrumental.wav"
             out_dir.mkdir(parents=True, exist_ok=True)
             melody_score.write("midi", fp=str(midi_path))
             music_engine.render_to_wav(midi_path, wav_path)
 
-            quarter_seconds = 60.0 / tempo_bpm
-            # NOTE: production line-duration extraction should read exact per-line
-            # quarterLength sums from build_melody's internal phrase construction;
-            # simplified equal-split kept here for the same reason as the validated
-            # sandbox prototype -- swap in exact per-line tracking before scaling volume.
-            total_notes_quarter = 5 * len(script["lyrics_lines"])  # matches PHRASE_SHAPES avg length
-            total_seconds = total_notes_quarter * quarter_seconds * 0.75
-            per_line = total_seconds / len(script["lyrics_lines"])
-            line_durations = [per_line] * len(script["lyrics_lines"])
+            # exact per-line duration from the melody itself -- no approximation
+            line_durations = music_engine.line_durations_seconds(line_quarter_lengths, tempo_bpm)
 
             vocal_path = vocal_sync_engine.build_synced_vocal_track(
                 job_id, script["lyrics_lines"], line_durations, out_dir

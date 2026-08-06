@@ -140,32 +140,16 @@ if __name__ == "__main__":
     # Reuse the exact same job as before to prove vocal timeline == instrumental timeline
     import sys
     sys.path.insert(0, "/home/claude")
-    from music_engine import build_melody, render_to_wav, seed_from_job_id
+    from music_engine import build_melody, line_durations_seconds, render_to_wav, seed_from_job_id
 
     job_id = "test_job_001"
     lyric_lines = ["Chalo dosto chalo", "Hum karte hain masti", "Gaate hain ye geet", "Milkar sabhi saathi"]
 
-    score, tempo_bpm = build_melody(job_id, lyric_lines, "happy")
-
-    # extract each part's (melody line) total quarterLength -> real seconds, matching
-    # exactly how music_engine built phrases (one lyric line = one phrase)
-    melody_part = score.parts[0]
-    notes = [n for n in melody_part.flatten().notes]
-    shape_len = 5  # matches PHRASE_SHAPES lengths in music_engine (5 notes/phrase, except twinkle shape)
-    # recompute durations per line directly from the notes stream in order
-    line_durations = []
-    idx = 0
-    # simplest robust approach: re-derive by re-running build_melody's internal logic
-    # is overkill for this test -- instead measure total track duration and split evenly
-    # weighted by shape (acceptable for this validation step).
-    total_quarter = sum(n.quarterLength for n in notes)
-    quarter_seconds = 60.0 / tempo_bpm
-    total_seconds = float(total_quarter) * quarter_seconds
-    # split total_seconds proportionally across the 4 lyric lines (equal split is fine
-    # since PHRASE_SHAPES in this test run are similar length; production code will
-    # track exact per-line durations from music_engine directly, see integration note)
-    per_line = total_seconds / len(lyric_lines)
-    line_durations = [per_line] * len(lyric_lines)
+    # exact per-line durations straight from the melody builder -- no approximation
+    # (this used to re-derive an equal-split estimate here; build_melody now returns
+    # the real per-line quarterLength sums directly, so use those instead)
+    score, tempo_bpm, line_quarter_lengths = build_melody(job_id, lyric_lines, "happy")
+    line_durations = line_durations_seconds(line_quarter_lengths, tempo_bpm)
 
     out_dir = Path("/home/claude/music_out")
     vocal_path = build_synced_vocal_track(job_id, lyric_lines, line_durations, out_dir)
@@ -178,6 +162,6 @@ if __name__ == "__main__":
         "vocal_track": str(vocal_path),
         "final_mixed": str(final_mixed),
         "line_durations_sec": line_durations,
-        "total_seconds": total_seconds,
+        "total_seconds": sum(line_durations),
         "stub_mode": USE_STUB
     }, indent=2))

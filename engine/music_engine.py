@@ -76,9 +76,11 @@ def build_melody(job_id: str, lyric_lines: list[str], mood: str = "happy",
     progression = rng.choice(progressions)
 
     n_lines = max(1, len(lyric_lines))
+    line_quarter_lengths = []  # exact per-line duration in quarter-notes, in order
     for i in range(n_lines):
         shape = rng.choice(PHRASE_SHAPES)
         degree_root = progression[i % len(progression)]
+        line_total = 0.0
         for deg in shape:
             idx = (degree_root - 1 + deg - 1) % len(scale_pitches)
             p = scale_pitches[idx]
@@ -86,17 +88,21 @@ def build_melody(job_id: str, lyric_lines: list[str], mood: str = "happy",
             n = note.Note(p)
             n.quarterLength = dur
             melody_part.append(n)
+            line_total += dur
+        line_quarter_lengths.append(line_total)
 
         # one sustained chord per line, matching the melody's harmonic root
         root_idx = (progression[i % len(progression)] - 1) % len(scale_pitches)
         c = chord.Chord([scale_pitches[root_idx], scale_pitches[(root_idx + 2) % len(scale_pitches)],
                           scale_pitches[(root_idx + 4) % len(scale_pitches)]])
-        c.quarterLength = sum(rng.choice([0.5, 0.5, 1.0]) for _ in shape)
+        c.quarterLength = line_total  # bugfix: was independently re-randomized before,
+                                       # causing chords to drift out of sync with the
+                                       # melody after a few lines. Now guaranteed to match.
         chord_part.append(c)
 
     sc.insert(0, melody_part)
     sc.insert(0, chord_part)
-    return sc, tempo_bpm
+    return sc, tempo_bpm, line_quarter_lengths
 
 
 def render_to_wav(midi_path: Path, wav_path: Path):
@@ -108,13 +114,21 @@ def render_to_wav(midi_path: Path, wav_path: Path):
     )
 
 
+def line_durations_seconds(line_quarter_lengths: list[float], tempo_bpm: int) -> list[float]:
+    """Exact per-line duration in real seconds, derived from the melody's own quarter-note
+    lengths -- no approximation. This is what vocal_sync_engine should use to time each
+    TTS line, so vocals lock to the melody exactly rather than an equal-split guess."""
+    quarter_seconds = 60.0 / tempo_bpm
+    return [q * quarter_seconds for q in line_quarter_lengths]
+
+
 def generate_song_instrumental(job_id: str, lyric_lines: list[str], mood: str,
                                 out_dir: Path) -> dict:
     out_dir.mkdir(parents=True, exist_ok=True)
     midi_path = out_dir / f"{job_id}.mid"
     wav_path = out_dir / f"{job_id}_instrumental.wav"
 
-    score, tempo_bpm = build_melody(job_id, lyric_lines, mood)
+    score, tempo_bpm, line_quarter_lengths = build_melody(job_id, lyric_lines, mood)
     score.write("midi", fp=str(midi_path))
     render_to_wav(midi_path, wav_path)
 
@@ -125,6 +139,7 @@ def generate_song_instrumental(job_id: str, lyric_lines: list[str], mood: str,
         "midi_path": str(midi_path),
         "wav_path": str(wav_path),
         "seed": seed_from_job_id(job_id),
+        "line_durations_sec": line_durations_seconds(line_quarter_lengths, tempo_bpm),
     }
 
 
@@ -137,4 +152,6 @@ if __name__ == "__main__":
     result_a2 = generate_song_instrumental("test_job_001", lines_a, "happy", Path("/home/claude/music_out"))
 
     print(json.dumps({"job_001": result_a, "job_002": result_b,
-                       "job_001_rerun_matches_seed": result_a["seed"] == result_a2["seed"]}, indent=2))
+                       "job_001_rerun_matches_seed": result_a["seed"] == result_a2["seed"],
+                       "job_001_rerun_matches_durations":
+                           result_a["line_durations_sec"] == result_a2["line_durations_sec"]}, indent=2))
