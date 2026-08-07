@@ -71,6 +71,10 @@ jobs:
         run: |
           git config user.name "kiddu-pipeline-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add state/jobs.json
-          git diff --cached --quiet || git commit -m "Update pipeline state [skip ci]"
-          git push
+          if [ -f state/jobs.json ]; then
+            git add state/jobs.json
+            git diff --cached --quiet || git commit -m "Update pipeline state [skip ci]"
+            git push
+          else
+            echo "No jobs.json yet (no jobs created/processed this run) -- nothing to commit."
+          fi

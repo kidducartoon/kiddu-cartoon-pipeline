@@ -53,8 +53,11 @@ def render_ken_burns_clip(image_path: Path, out_path: Path, duration_seconds: fl
                            camera_move: str = "static", fps: int = 30, width=1280, height=720):
     move = CAMERA_MOVES.get(camera_move, CAMERA_MOVES["static"])
     n_frames = max(1, int(duration_seconds * fps))
+    # bugfix: zoompan has no 'duration_frames' variable -- substitute the literal
+    # frame count (n_frames) directly into pan expressions instead.
+    x_expr = move['x'].replace('duration_frames', str(n_frames))
     zoompan = (
-        f"zoompan=z={move['z']}:x={move['x']}:y={move['y']}:d={n_frames}:s={width}x{height}:fps={fps}"
+        f"zoompan=z={move['z']}:x={x_expr}:y={move['y']}:d={n_frames}:s={width}x{height}:fps={fps}"
     )
     subprocess.run([
         "ffmpeg", "-y", "-loop", "1", "-i", str(image_path),
