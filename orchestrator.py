@@ -42,8 +42,7 @@ def stage_script():
     jobs = job_store.get_jobs_at_stage("QUEUED") + job_store.get_failed_jobs("script")
     for job in jobs:
         def run(job):
-            n_lines = 4 if job["video_type"] == "short" else 8
-            script = script_engine.generate_script(n_lines=n_lines)
+            script = script_engine.generate_script(job_id=job["job_id"])
             return {"script": script}
         job_store.run_stage_safely(job, "script", "SCRIPTED", run)
         print(f"[script] {job['job_id']} -> done")
