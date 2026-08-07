@@ -4,16 +4,118 @@
     "video_type": "short",
     "slot_time_ist": "08:00",
     "mood": "happy",
-    "status": "QUEUED",
+    "status": "PUBLISHED",
     "created_at": "2026-08-07T02:06:38.813705+00:00",
-    "updated_at": "2026-08-07T02:06:38.813712+00:00",
+    "updated_at": "2026-08-07T02:12:29.161904+00:00",
     "history": [
       {
         "status": "QUEUED",
         "at": "2026-08-07T02:06:38.813715+00:00"
+      },
+      {
+        "status": "SCRIPTED",
+        "at": "2026-08-07T02:08:11.329542+00:00"
+      },
+      {
+        "status": "SCORED",
+        "at": "2026-08-07T02:08:21.725737+00:00"
+      },
+      {
+        "status": "ANIMATED",
+        "at": "2026-08-07T02:12:09.735789+00:00"
+      },
+      {
+        "status": "RENDERED",
+        "at": "2026-08-07T02:12:27.440316+00:00"
+      },
+      {
+        "status": "PUBLISHED",
+        "at": "2026-08-07T02:12:29.161918+00:00"
       }
     ],
     "error": null,
-    "data": {}
+    "data": {
+      "script": {
+        "title": "Bunty की मस्ती भरी कहानी",
+        "title_english_transliteration": "Bunty Ki Masti Bhari Kahani",
+        "mood": "calm",
+        "character": {
+          "name": "Bunty",
+          "appearance": "a chubby brown bear cub with a green scarf, round ears, warm smile",
+          "personality": "gentle, sleepy, loves helping others"
+        },
+        "background_setting": "a sunny green meadow with tall trees, colorful flowers, and a small sparkling pond",
+        "lyrics_lines": [
+          "Bunty सोता चुपचाप रात में",
+          "तारे चमके आसमान में",
+          "चंदा मामा दे रहे प्यार",
+          "नींद में सपनों की बहार",
+          "मम्मी गाए लोरी प्यारी",
+          "सो जाए दुनिया सारी"
+        ],
+        "scenes": [
+          {
+            "line_index": 0,
+            "scene_description": "Bunty lying down peacefully under the stars",
+            "camera_move": "static"
+          },
+          {
+            "line_index": 1,
+            "scene_description": "twinkling stars filling the night sky",
+            "camera_move": "zoom-out"
+          },
+          {
+            "line_index": 2,
+            "scene_description": "the moon glowing softly above",
+            "camera_move": "pan-right"
+          },
+          {
+            "line_index": 3,
+            "scene_description": "Bunty dreaming happily with a gentle smile",
+            "camera_move": "zoom-in"
+          },
+          {
+            "line_index": 4,
+            "scene_description": "a warm cozy scene of comfort and love",
+            "camera_move": "static"
+          },
+          {
+            "line_index": 5,
+            "scene_description": "the whole scene settling into peaceful sleep",
+            "camera_move": "zoom-out"
+          }
+        ],
+        "youtube_tags": [
+          "bunty hindi song",
+          "hindi kids song",
+          "bacchon ke geet",
+          "hindi cartoon",
+          "hindi rhymes",
+          "kids cartoon hindi",
+          "hindi nursery rhymes",
+          "cartoon for kids",
+          "hindi balgeet",
+          "kiddu cartoon",
+          "bachon ka gana",
+          "animated hindi song"
+        ],
+        "youtube_description": "Bunty ka ek pyara sa gaana bacchon ke liye! An original animated Hindi kids' song, made with love for little ones."
+      },
+      "song_path": "/tmp/kiddu_pipeline/music/20260807_0800_short_af2c54/20260807_0800_short_af2c54_final_song.wav",
+      "line_durations": [
+        2.5301204819277108,
+        2.891566265060241,
+        2.891566265060241,
+        1.8072289156626506,
+        2.5301204819277108,
+        2.5301204819277108
+      ],
+      "tempo_bpm": 83,
+      "silent_video_path": "/tmp/kiddu_pipeline/video/20260807_0800_short_af2c54/20260807_0800_short_af2c54_silent_video.mp4",
+      "final_video": "/tmp/kiddu_pipeline/final/20260807_0800_short_af2c54/20260807_0800_short_af2c54_short.mp4",
+      "thumbnail": "/tmp/kiddu_pipeline/final/20260807_0800_short_af2c54/20260807_0800_short_af2c54_thumb.jpg",
+      "youtube_video_id": "JBkI12OhMg4",
+      "youtube_url": "https://youtu.be/JBkI12OhMg4"
+    }
   }
 }
