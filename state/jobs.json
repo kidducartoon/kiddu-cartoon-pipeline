@@ -4,9 +4,9 @@
     "video_type": "long",
     "slot_time_ist": "06:00",
     "mood": "happy",
-    "status": "FAILED_music",
+    "status": "FAILED_assemble",
     "created_at": "2026-08-07T01:41:17.052991+00:00",
-    "updated_at": "2026-08-07T01:46:19.008602+00:00",
+    "updated_at": "2026-08-07T02:01:16.151356+00:00",
     "history": [
       {
         "status": "QUEUED",
@@ -25,9 +25,27 @@
         "status": "FAILED_music",
         "at": "2026-08-07T01:46:19.008618+00:00",
         "error": "WSServerHandshakeError: 403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=8011B03DF271CAFAA3C6A0C03E5EE40E0745F90897A083BB24DB37A1642BCDF8&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=f0e572f9720340b7a182ff54fa12cf9b'"
+      },
+      {
+        "status": "SCORED",
+        "at": "2026-08-07T01:51:04.581430+00:00"
+      },
+      {
+        "status": "ANIMATED",
+        "at": "2026-08-07T01:57:05.317862+00:00"
+      },
+      {
+        "status": "FAILED_assemble",
+        "at": "2026-08-07T01:59:28.394191+00:00",
+        "error": "CalledProcessError: Command '['ffmpeg', '-y', '-i', '/tmp/kiddu_pipeline/video/20260807_0600_long_95a85f/20260807_0600_long_95a85f_silent_video.mp4', '-i', '/tmp/kiddu_pipeline/music/20260807_0600_long_95a85f/20260807_0600_long_95a85f_final_song.wav', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '192k', '-shortest', '/tmp/kiddu_pipeline/final/20260807_0600_long_95a85f/20260807_0600_long_95a85f_merged.mp4']' returned non-zero exit status 254."
+      },
+      {
+        "status": "FAILED_assemble",
+        "at": "2026-08-07T02:01:16.151377+00:00",
+        "error": "CalledProcessError: Command '['ffmpeg', '-y', '-i', '/tmp/kiddu_pipeline/video/20260807_0600_long_95a85f/20260807_0600_long_95a85f_silent_video.mp4', '-i', '/tmp/kiddu_pipeline/music/20260807_0600_long_95a85f/20260807_0600_long_95a85f_final_song.wav', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '192k', '-shortest', '/tmp/kiddu_pipeline/final/20260807_0600_long_95a85f/20260807_0600_long_95a85f_merged.mp4']' returned non-zero exit status 254."
       }
     ],
-    "error": "WSServerHandshakeError: 403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=8011B03DF271CAFAA3C6A0C03E5EE40E0745F90897A083BB24DB37A1642BCDF8&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=f0e572f9720340b7a182ff54fa12cf9b'",
+    "error": "CalledProcessError: Command '['ffmpeg', '-y', '-i', '/tmp/kiddu_pipeline/video/20260807_0600_long_95a85f/20260807_0600_long_95a85f_silent_video.mp4', '-i', '/tmp/kiddu_pipeline/music/20260807_0600_long_95a85f/20260807_0600_long_95a85f_final_song.wav', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '192k', '-shortest', '/tmp/kiddu_pipeline/final/20260807_0600_long_95a85f/20260807_0600_long_95a85f_merged.mp4']' returned non-zero exit status 254.",
     "data": {
       "script": {
         "title": "Mithu की मस्ती भरी कहानी",
@@ -94,7 +112,18 @@
           "animated hindi song"
         ],
         "youtube_description": "Mithu ka ek pyara sa gaana bacchon ke liye! An original animated Hindi kids' song, made with love for little ones."
-      }
+      },
+      "song_path": "/tmp/kiddu_pipeline/music/20260807_0600_long_95a85f/20260807_0600_long_95a85f_final_song.wav",
+      "line_durations": [
+        1.640625,
+        1.875,
+        1.640625,
+        2.109375,
+        1.875,
+        1.40625
+      ],
+      "tempo_bpm": 128,
+      "silent_video_path": "/tmp/kiddu_pipeline/video/20260807_0600_long_95a85f/20260807_0600_long_95a85f_silent_video.mp4"
     }
   }
 }
