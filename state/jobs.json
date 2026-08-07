@@ -4,9 +4,9 @@
     "video_type": "long",
     "slot_time_ist": "06:00",
     "mood": "happy",
-    "status": "SCORED",
+    "status": "ANIMATED",
     "created_at": "2026-08-07T01:41:17.052991+00:00",
-    "updated_at": "2026-08-07T01:51:04.581412+00:00",
+    "updated_at": "2026-08-07T01:57:05.317844+00:00",
     "history": [
       {
         "status": "QUEUED",
@@ -29,6 +29,10 @@
       {
         "status": "SCORED",
         "at": "2026-08-07T01:51:04.581430+00:00"
+      },
+      {
+        "status": "ANIMATED",
+        "at": "2026-08-07T01:57:05.317862+00:00"
       }
     ],
     "error": null,
@@ -108,7 +112,8 @@
         1.875,
         1.40625
       ],
-      "tempo_bpm": 128
+      "tempo_bpm": 128,
+      "silent_video_path": "/tmp/kiddu_pipeline/video/20260807_0600_long_95a85f/20260807_0600_long_95a85f_silent_video.mp4"
     }
   }
 }
