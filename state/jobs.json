@@ -4,9 +4,9 @@
     "video_type": "long",
     "slot_time_ist": "06:00",
     "mood": "happy",
-    "status": "ANIMATED",
+    "status": "FAILED_assemble",
     "created_at": "2026-08-07T01:41:17.052991+00:00",
-    "updated_at": "2026-08-07T01:57:05.317844+00:00",
+    "updated_at": "2026-08-07T01:59:28.394172+00:00",
     "history": [
       {
         "status": "QUEUED",
@@ -33,9 +33,14 @@
       {
         "status": "ANIMATED",
         "at": "2026-08-07T01:57:05.317862+00:00"
+      },
+      {
+        "status": "FAILED_assemble",
+        "at": "2026-08-07T01:59:28.394191+00:00",
+        "error": "CalledProcessError: Command '['ffmpeg', '-y', '-i', '/tmp/kiddu_pipeline/video/20260807_0600_long_95a85f/20260807_0600_long_95a85f_silent_video.mp4', '-i', '/tmp/kiddu_pipeline/music/20260807_0600_long_95a85f/20260807_0600_long_95a85f_final_song.wav', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '192k', '-shortest', '/tmp/kiddu_pipeline/final/20260807_0600_long_95a85f/20260807_0600_long_95a85f_merged.mp4']' returned non-zero exit status 254."
       }
     ],
-    "error": null,
+    "error": "CalledProcessError: Command '['ffmpeg', '-y', '-i', '/tmp/kiddu_pipeline/video/20260807_0600_long_95a85f/20260807_0600_long_95a85f_silent_video.mp4', '-i', '/tmp/kiddu_pipeline/music/20260807_0600_long_95a85f/20260807_0600_long_95a85f_final_song.wav', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '192k', '-shortest', '/tmp/kiddu_pipeline/final/20260807_0600_long_95a85f/20260807_0600_long_95a85f_merged.mp4']' returned non-zero exit status 254.",
     "data": {
       "script": {
         "title": "Mithu की मस्ती भरी कहानी",
