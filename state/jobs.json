@@ -4,9 +4,9 @@
     "video_type": "long",
     "slot_time_ist": "06:00",
     "mood": "happy",
-    "status": "SCRIPTED",
+    "status": "FAILED_music",
     "created_at": "2026-08-07T01:41:17.052991+00:00",
-    "updated_at": "2026-08-07T01:42:53.837373+00:00",
+    "updated_at": "2026-08-07T01:44:17.836083+00:00",
     "history": [
       {
         "status": "QUEUED",
@@ -15,9 +15,14 @@
       {
         "status": "SCRIPTED",
         "at": "2026-08-07T01:42:53.837388+00:00"
+      },
+      {
+        "status": "FAILED_music",
+        "at": "2026-08-07T01:44:17.836098+00:00",
+        "error": "WSServerHandshakeError: 403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=643A9D7A570C22FCCC3BF968CC30A04F0CD0AB4BF7D1163D7B47DC0FC7B6FF39&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=93b95c64f90c4c22a06676ddaec5731f'"
       }
     ],
-    "error": null,
+    "error": "WSServerHandshakeError: 403, message='Invalid response status', url='wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&Sec-MS-GEC=643A9D7A570C22FCCC3BF968CC30A04F0CD0AB4BF7D1163D7B47DC0FC7B6FF39&Sec-MS-GEC-Version=1-130.0.2849.68&ConnectionId=93b95c64f90c4c22a06676ddaec5731f'",
     "data": {
       "script": {
         "title": "Mithu की मस्ती भरी कहानी",
