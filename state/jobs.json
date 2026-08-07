@@ -831,5 +831,22 @@
       "youtube_video_id": "S5nFLG2hA7Q",
       "youtube_url": "https://youtu.be/S5nFLG2hA7Q"
     }
+  },
+  "20260807_2000_short_ed943b": {
+    "job_id": "20260807_2000_short_ed943b",
+    "video_type": "short",
+    "slot_time_ist": "20:00",
+    "mood": "happy",
+    "status": "QUEUED",
+    "created_at": "2026-08-07T14:31:29.598798+00:00",
+    "updated_at": "2026-08-07T14:31:29.598805+00:00",
+    "history": [
+      {
+        "status": "QUEUED",
+        "at": "2026-08-07T14:31:29.598808+00:00"
+      }
+    ],
+    "error": null,
+    "data": {}
   }
 }
