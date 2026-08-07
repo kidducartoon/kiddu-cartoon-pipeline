@@ -19,11 +19,8 @@ is blocked, and nothing is lost.
 | Secret | Where to get it |
 |---|---|
 | `YOUTUBE_API_KEY` | Google Cloud Console -> enable "YouTube Data API v3" -> Credentials -> API key |
-| `GEMINI_API_KEY` | Google AI Studio (aistudio.google.com) -> Get API key (free tier) |
 | `YOUTUBE_CLIENT_ID` / `YOUTUBE_CLIENT_SECRET` | Google Cloud Console -> OAuth client (Desktop app type) for the channel's own Google account |
 | `YOUTUBE_REFRESH_TOKEN` | Generated once via OAuth consent flow with scope `https://www.googleapis.com/auth/youtube.upload` (run locally once; see below) |
-| `GDRIVE_SERVICE_ACCOUNT_JSON` | Google Cloud Console -> Service Account -> JSON key -> base64-encode it (`base64 -w0 key.json`) |
-| `GDRIVE_BUFFER_FOLDER_ID` | The Drive folder ID used as short-term video storage before publish (share it with the service account's email) |
 
 **Getting a YouTube refresh token (one-time, manual, cannot be automated for security
 reasons -- Google requires a human consent click):**
@@ -67,13 +64,22 @@ means that job sits a bit longer at its current status until the next cron tick 
 
 ## Known limitations (see project chat for full discussion)
 
+- Script generation is fully local/templated ($0, no Gemini) -- Gemini was dropped because
+  this Google Cloud org forces service-account-bound API keys, which get 0 free-tier quota
+  without billing enabled. Variety comes from 5 characters x 5 backgrounds x 4 themes,
+  deterministically combined per job_id.
+- No Google Drive buffer -- removed after confirming service accounts can't own files in a
+  regular personal Drive. GitHub Actions holds the rendered video locally for the single
+  job run and uploads straight to YouTube; nothing persists after the runner ends.
 - Music is procedurally generated MIDI-quality (fluidsynth + GM soundfont) -- genuinely
   $0 and unique per video, but not studio-produced quality.
 - Vocals are edge-tts speech time-stretched to match the melody's rhythm -- a rhythmic
-  chant, not true singing.
+  chant, not true singing. (Validated for timing logic only in a network-restricted dev
+  sandbox; real edge-tts audio should work on GitHub Actions' open network but hasn't
+  been confirmed there yet.)
 - Visuals are 2.5D (AI still images + Ken Burns pan/zoom), not true 3D rendering.
-- Image generation uses Pollinations.ai's free keyless API -- quality/consistency is
-  best-effort at this price point; consider a paid image API if quality is insufficient.
-- `edge-tts` and `image.pollinations.ai` are unreachable from a restricted dev sandbox;
-  both were validated for logic/timing only there and need real validation on the first
-  live GitHub Actions run (see project chat).
+- Image generation uses Pollinations.ai's free keyless API -- confirmed working, good
+  quality for the price point.
+- Custom YouTube thumbnails require the channel to be phone-verified (confirmed via a
+  real failed upload: 403 permission error). Non-fatal -- publish continues without a
+  custom thumbnail; YouTube auto-generates one from the video.

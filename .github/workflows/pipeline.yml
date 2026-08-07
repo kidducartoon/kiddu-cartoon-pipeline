@@ -52,8 +52,6 @@ jobs:
           YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
           YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
           YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
-          GDRIVE_SERVICE_ACCOUNT_JSON: ${{ secrets.GDRIVE_SERVICE_ACCOUNT_JSON }}
-          GDRIVE_BUFFER_FOLDER_ID: ${{ secrets.GDRIVE_BUFFER_FOLDER_ID }}
         run: |
           STAGE="${{ steps.determine.outputs.stage }}"
           case "$STAGE" in

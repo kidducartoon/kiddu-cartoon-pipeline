@@ -124,7 +124,6 @@ def stage_publish():
                 Path(job["data"]["final_video"]),
                 Path(job["data"]["thumbnail"]),
                 script,
-                drive_file_id=job["data"].get("drive_file_id"),
             )
             return result
         job_store.run_stage_safely(job, "publish", "PUBLISHED", run)
