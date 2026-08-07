@@ -139,9 +139,26 @@ STAGES = {
     "publish": stage_publish,
 }
 
+
+def stage_process_all():
+    """Run every processing stage in sequence within a single process/runner.
+    Required because each GitHub Actions job runs on a fresh, ephemeral machine --
+    intermediate local files (WORK_DIR) do NOT persist between separately-triggered
+    stage runs. Running all stages back-to-back in one job means a job that's ready to
+    advance multiple steps (e.g. freshly created -> scripted -> scored -> ...) does so
+    entirely within one runner's local filesystem, so downstream stages can actually see
+    the previous stage's output files. Each stage function is still idempotent and only
+    touches jobs at its own expected input status, so calling all 5 unconditionally is
+    safe and just no-ops for stages with nothing to do."""
+    stage_script()
+    stage_music()
+    stage_animate()
+    stage_assemble()
+    stage_publish()
+
 if __name__ == "__main__":
-    if len(sys.argv) < 2 or sys.argv[1] not in STAGES:
-        print(f"Usage: python3 orchestrator.py <{'|'.join(STAGES)}> [args]")
+    if len(sys.argv) < 2:
+        print(f"Usage: python3 orchestrator.py <create_job|process_all> [args]")
         sys.exit(1)
     stage = sys.argv[1]
     if stage == "create_job":
@@ -149,5 +166,13 @@ if __name__ == "__main__":
             print("Usage: python3 orchestrator.py create_job <HH:MM>")
             sys.exit(1)
         stage_create_job(sys.argv[2])
-    else:
+    elif stage == "process_all":
+        stage_process_all()
+    elif stage in STAGES:
+        # kept for manual/debugging use -- production crons always use process_all
+        # (see .github/workflows/pipeline.yml) since individual stages can't see each
+        # other's local files across separate ephemeral GitHub Actions runners.
         STAGES[stage]()
+    else:
+        print(f"Unknown stage: {stage}")
+        sys.exit(1)

@@ -75,6 +75,15 @@ jobs:
               HHMM="${TIME:0:2}:${TIME:2:2}"
               python3 orchestrator.py create_job "$HHMM"
               ;;
+            script|music|animate|assemble|publish)
+              # All 5 stage-crons run the FULL pipeline within one job execution.
+              # Required because each GitHub Actions run is a fresh, ephemeral machine --
+              # a job's intermediate files from one stage don't exist on the next
+              # separately-triggered run's machine. Running all stages together in one
+              # process means a job can advance through several stages using the same
+              # local filesystem. See orchestrator.py's stage_process_all().
+              python3 orchestrator.py process_all
+              ;;
             *)
               python3 orchestrator.py "$STAGE"
               ;;
