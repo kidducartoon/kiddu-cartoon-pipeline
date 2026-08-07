@@ -1,30 +1,24 @@
 """
-Vocal Sync Engine — takes the melody line-durations from music_engine.py and the Hindi
-lyric lines, generates TTS per line, then time-stretches each line (ffmpeg atempo) so its
-spoken duration EXACTLY matches that line's melodic phrase duration. This is what makes
-the vocal "ride" the tune instead of just being spoken over it.
+Vocal Sync Engine — times Hindi lines to match each melody phrase's duration exactly,
+then generates the actual vocal audio and mixes it with the instrumental.
 
-Two audio backends:
-- edge_tts (real Hindi neural voice) -- requires open internet (works on GitHub Actions,
-  NOT in this restricted sandbox).
-- stub_tone_backend -- generates a placeholder spoken-cadence tone burst per line, used
-  ONLY to prove the timing/stretch pipeline logic works, when edge-tts network is blocked.
+TTS backend: Piper (https://github.com/rhasspy/piper), MIT licensed, runs fully OFFLINE
+with real neural voice models (no network call at synthesis time). Switched from edge-tts
+after confirming edge-tts's reverse-engineered Microsoft protocol is currently blocked in
+production (real error seen on a live GitHub Actions run: "WSServerHandshakeError: 403"
+connecting to speech.platform.bing.com) -- an unofficial API Microsoft can and does break
+at any time. Piper has no such risk since it never talks to a remote service at all.
 
-Both backends produce a raw per-line WAV; downstream stretch/merge logic is identical,
-so swapping backends requires no other code changes.
+The Hindi voice model (hi_IN-pratham-medium, ONNX + config) is downloaded once by the
+GitHub Actions workflow (see .github/workflows/pipeline.yml) into PIPER_MODEL_DIR, cached
+between runs so it isn't re-downloaded every 15 minutes.
 """
-import asyncio
+import os
 import subprocess
-import json
 from pathlib import Path
 
-USE_STUB = False  # GitHub Actions has open network access to speech.platform.bing.com
-                 # Flip to False (or delete this override) when running in GitHub Actions.
-
-try:
-    import edge_tts
-except ImportError:
-    edge_tts = None
+PIPER_MODEL_DIR = Path(os.environ.get("PIPER_MODEL_DIR", "/home/runner/piper_voices"))
+PIPER_MODEL_NAME = "hi_IN-pratham-medium"
 
 
 def line_duration_seconds(n_notes_in_phrase: int, quarter_lengths: list[float], tempo_bpm: int) -> float:
@@ -33,29 +27,20 @@ def line_duration_seconds(n_notes_in_phrase: int, quarter_lengths: list[float], 
     return sum(quarter_lengths) * quarter_seconds
 
 
-async def _edge_tts_line(text: str, out_path: Path, voice: str = "hi-IN-SwaraNeural"):
-    communicate = edge_tts.Communicate(text, voice)
-    await communicate.save(str(out_path))
-
-
-def _stub_tone_line(text: str, out_path: Path, natural_seconds: float):
-    """Placeholder: a soft spoken-cadence tone burst scaled to roughly the line's natural
-    speaking length (approx 0.16s/syllable-ish via char count), purely to validate the
-    stretch-to-melody pipeline when the real TTS endpoint is unreachable (sandbox only)."""
-    approx_len = max(0.6, len(text) * 0.09)
-    subprocess.run([
-        "ffmpeg", "-y", "-f", "lavfi",
-        "-i", f"sine=frequency=220:duration={approx_len}",
-        "-af", "volume=0.3",
-        str(out_path)
-    ], check=True, capture_output=True)
+def _piper_tts_line(text: str, out_path: Path):
+    """Synthesize one line of Hindi text to a WAV file using the local, offline Piper
+    model. Piper reads input text from stdin and writes a WAV file to -f."""
+    model_path = PIPER_MODEL_DIR / f"{PIPER_MODEL_NAME}.onnx"
+    config_path = PIPER_MODEL_DIR / f"{PIPER_MODEL_NAME}.onnx.json"
+    subprocess.run(
+        ["piper", "-m", str(model_path), "-c", str(config_path), "-f", str(out_path)],
+        input=text.encode("utf-8"),
+        check=True, capture_output=True,
+    )
 
 
 def generate_tts_line(text: str, out_path: Path, natural_seconds_hint: float = 1.0):
-    if USE_STUB or edge_tts is None:
-        _stub_tone_line(text, out_path, natural_seconds_hint)
-    else:
-        asyncio.run(_edge_tts_line(text, out_path))
+    _piper_tts_line(text, out_path)
 
 
 def stretch_to_duration(in_path: Path, out_path: Path, target_seconds: float):
@@ -163,5 +148,5 @@ if __name__ == "__main__":
         "final_mixed": str(final_mixed),
         "line_durations_sec": line_durations,
         "total_seconds": sum(line_durations),
-        "stub_mode": USE_STUB
+        "backend": "piper"
     }, indent=2))

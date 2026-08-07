@@ -36,6 +36,22 @@ jobs:
       - name: Install Python deps
         run: pip install -r requirements.txt
 
+      - name: Cache Piper Hindi voice model
+        id: piper-cache
+        uses: actions/cache@v4
+        with:
+          path: /home/runner/piper_voices
+          key: piper-voices-hi_IN-pratham-medium-v1
+
+      - name: Download Piper Hindi voice model (if not cached)
+        if: steps.piper-cache.outputs.cache-hit != 'true'
+        run: |
+          mkdir -p /home/runner/piper_voices
+          curl -sL "https://huggingface.co/rhasspy/piper-voices/resolve/main/hi/hi_IN/pratham/medium/hi_IN-pratham-medium.onnx" \
+            -o /home/runner/piper_voices/hi_IN-pratham-medium.onnx
+          curl -sL "https://huggingface.co/rhasspy/piper-voices/resolve/main/hi/hi_IN/pratham/medium/hi_IN-pratham-medium.onnx.json" \
+            -o /home/runner/piper_voices/hi_IN-pratham-medium.onnx.json
+
       - name: Determine stage
         id: determine
         run: |
@@ -48,7 +64,6 @@ jobs:
       - name: Run stage
         env:
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
           YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
           YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
