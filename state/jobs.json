@@ -1075,16 +1075,118 @@
     "video_type": "short",
     "slot_time_ist": "08:00",
     "mood": "happy",
-    "status": "QUEUED",
+    "status": "PUBLISHED",
     "created_at": "2026-08-08T02:31:32.508771+00:00",
-    "updated_at": "2026-08-08T02:31:32.508778+00:00",
+    "updated_at": "2026-08-08T02:48:14.435068+00:00",
     "history": [
       {
         "status": "QUEUED",
         "at": "2026-08-08T02:31:32.508780+00:00"
+      },
+      {
+        "status": "SCRIPTED",
+        "at": "2026-08-08T02:46:15.475468+00:00"
+      },
+      {
+        "status": "SCORED",
+        "at": "2026-08-08T02:46:25.316527+00:00"
+      },
+      {
+        "status": "ANIMATED",
+        "at": "2026-08-08T02:48:00.302220+00:00"
+      },
+      {
+        "status": "RENDERED",
+        "at": "2026-08-08T02:48:12.791211+00:00"
+      },
+      {
+        "status": "PUBLISHED",
+        "at": "2026-08-08T02:48:14.435082+00:00"
       }
     ],
     "error": null,
-    "data": {}
+    "data": {
+      "script": {
+        "title": "Bunty की मस्ती भरी कहानी",
+        "title_english_transliteration": "Bunty Ki Masti Bhari Kahani",
+        "mood": "happy",
+        "character": {
+          "name": "Bunty",
+          "appearance": "a chubby brown bear cub with a green scarf, round ears, warm smile",
+          "personality": "gentle, sleepy, loves helping others"
+        },
+        "background_setting": "a sunny green meadow with tall trees, colorful flowers, and a small sparkling pond",
+        "lyrics_lines": [
+          "Bunty चला घूमने बाग में",
+          "फूलों से करे वो बात",
+          "तितली संग वो नाचे गाए",
+          "पानी में करे छपाक",
+          "दोस्तों को वो बुलाए पास",
+          "सब मिलकर मनाएं खास"
+        ],
+        "scenes": [
+          {
+            "line_index": 0,
+            "scene_description": "Bunty walking happily into the setting",
+            "camera_move": "pan-right"
+          },
+          {
+            "line_index": 1,
+            "scene_description": "Bunty bending down to smell colorful flowers",
+            "camera_move": "zoom-in"
+          },
+          {
+            "line_index": 2,
+            "scene_description": "Bunty dancing with a butterfly fluttering around",
+            "camera_move": "pan-left"
+          },
+          {
+            "line_index": 3,
+            "scene_description": "Bunty splashing happily in water",
+            "camera_move": "zoom-out"
+          },
+          {
+            "line_index": 4,
+            "scene_description": "Bunty waving and calling friends to join",
+            "camera_move": "static"
+          },
+          {
+            "line_index": 5,
+            "scene_description": "Bunty and friends all together celebrating",
+            "camera_move": "zoom-out"
+          }
+        ],
+        "youtube_tags": [
+          "bunty hindi song",
+          "hindi kids song",
+          "bacchon ke geet",
+          "hindi cartoon",
+          "hindi rhymes",
+          "kids cartoon hindi",
+          "hindi nursery rhymes",
+          "cartoon for kids",
+          "hindi balgeet",
+          "kiddu cartoon",
+          "bachon ka gana",
+          "animated hindi song"
+        ],
+        "youtube_description": "Bunty ka ek pyara sa gaana bacchon ke liye! An original animated Hindi kids' song, made with love for little ones."
+      },
+      "song_path": "/tmp/kiddu_pipeline/music/20260808_0800_short_a65f51/20260808_0800_short_a65f51_final_song.wav",
+      "line_durations": [
+        2.0149253731343286,
+        1.119402985074627,
+        2.238805970149254,
+        1.3432835820895523,
+        2.0149253731343286,
+        1.3432835820895523
+      ],
+      "tempo_bpm": 134,
+      "silent_video_path": "/tmp/kiddu_pipeline/video/20260808_0800_short_a65f51/20260808_0800_short_a65f51_silent_video.mp4",
+      "final_video": "/tmp/kiddu_pipeline/final/20260808_0800_short_a65f51/20260808_0800_short_a65f51_short.mp4",
+      "thumbnail": "/tmp/kiddu_pipeline/final/20260808_0800_short_a65f51/20260808_0800_short_a65f51_thumb.jpg",
+      "youtube_video_id": "ZYwGHCQ4qxc",
+      "youtube_url": "https://youtu.be/ZYwGHCQ4qxc"
+    }
   }
 }
