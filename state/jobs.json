@@ -1545,5 +1545,22 @@
       "youtube_video_id": "2SUTTIAXjog",
       "youtube_url": "https://youtu.be/2SUTTIAXjog"
     }
+  },
+  "20260808_1600_short_2c4a11": {
+    "job_id": "20260808_1600_short_2c4a11",
+    "video_type": "short",
+    "slot_time_ist": "16:00",
+    "mood": "happy",
+    "status": "QUEUED",
+    "created_at": "2026-08-08T10:31:15.827531+00:00",
+    "updated_at": "2026-08-08T10:31:15.827539+00:00",
+    "history": [
+      {
+        "status": "QUEUED",
+        "at": "2026-08-08T10:31:15.827542+00:00"
+      }
+    ],
+    "error": null,
+    "data": {}
   }
 }
