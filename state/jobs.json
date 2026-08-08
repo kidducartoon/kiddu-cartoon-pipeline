@@ -1313,16 +1313,118 @@
     "video_type": "short",
     "slot_time_ist": "12:00",
     "mood": "happy",
-    "status": "QUEUED",
+    "status": "PUBLISHED",
     "created_at": "2026-08-08T06:31:32.001391+00:00",
-    "updated_at": "2026-08-08T06:31:32.001399+00:00",
+    "updated_at": "2026-08-08T06:49:38.307364+00:00",
     "history": [
       {
         "status": "QUEUED",
         "at": "2026-08-08T06:31:32.001401+00:00"
+      },
+      {
+        "status": "SCRIPTED",
+        "at": "2026-08-08T06:46:09.837816+00:00"
+      },
+      {
+        "status": "SCORED",
+        "at": "2026-08-08T06:46:20.080768+00:00"
+      },
+      {
+        "status": "ANIMATED",
+        "at": "2026-08-08T06:49:22.317542+00:00"
+      },
+      {
+        "status": "RENDERED",
+        "at": "2026-08-08T06:49:36.769096+00:00"
+      },
+      {
+        "status": "PUBLISHED",
+        "at": "2026-08-08T06:49:38.307379+00:00"
       }
     ],
     "error": null,
-    "data": {}
+    "data": {
+      "script": {
+        "title": "Chintu की मस्ती भरी कहानी",
+        "title_english_transliteration": "Chintu Ki Masti Bhari Kahani",
+        "mood": "playful",
+        "character": {
+          "name": "Chintu",
+          "appearance": "a cheerful round baby elephant, light blue skin, big floppy ears, small red bow tie, big friendly eyes",
+          "personality": "curious, kind, loves making friends"
+        },
+        "background_setting": "a sunny green meadow with tall trees, colorful flowers, and a small sparkling pond",
+        "lyrics_lines": [
+          "Chintu बांटे अपनी मिठाई",
+          "दोस्तों संग खाए भाई",
+          "साथ मिलकर खेले खेल",
+          "मस्ती में हो अच्छा मेल",
+          "एक दूजे की मदद करें",
+          "प्यार से मिलजुल कर रहें"
+        ],
+        "scenes": [
+          {
+            "line_index": 0,
+            "scene_description": "Chintu sharing sweets with friends happily",
+            "camera_move": "pan-left"
+          },
+          {
+            "line_index": 1,
+            "scene_description": "Chintu and friends eating together",
+            "camera_move": "zoom-in"
+          },
+          {
+            "line_index": 2,
+            "scene_description": "Chintu and friends playing a fun game",
+            "camera_move": "pan-right"
+          },
+          {
+            "line_index": 3,
+            "scene_description": "everyone laughing and having fun together",
+            "camera_move": "zoom-out"
+          },
+          {
+            "line_index": 4,
+            "scene_description": "Chintu helping a friend who needs it",
+            "camera_move": "static"
+          },
+          {
+            "line_index": 5,
+            "scene_description": "the whole group together in friendship",
+            "camera_move": "zoom-out"
+          }
+        ],
+        "youtube_tags": [
+          "chintu hindi song",
+          "hindi kids song",
+          "bacchon ke geet",
+          "hindi cartoon",
+          "hindi rhymes",
+          "kids cartoon hindi",
+          "hindi nursery rhymes",
+          "cartoon for kids",
+          "hindi balgeet",
+          "kiddu cartoon",
+          "bachon ka gana",
+          "animated hindi song"
+        ],
+        "youtube_description": "Chintu ka ek pyara sa gaana bacchon ke liye! An original animated Hindi kids' song, made with love for little ones."
+      },
+      "song_path": "/tmp/kiddu_pipeline/music/20260808_1200_short_97e8c5/20260808_1200_short_97e8c5_final_song.wav",
+      "line_durations": [
+        1.68,
+        1.68,
+        1.44,
+        1.92,
+        1.68,
+        2.4
+      ],
+      "tempo_bpm": 125,
+      "silent_video_path": "/tmp/kiddu_pipeline/video/20260808_1200_short_97e8c5/20260808_1200_short_97e8c5_silent_video.mp4",
+      "final_video": "/tmp/kiddu_pipeline/final/20260808_1200_short_97e8c5/20260808_1200_short_97e8c5_short.mp4",
+      "thumbnail": "/tmp/kiddu_pipeline/final/20260808_1200_short_97e8c5/20260808_1200_short_97e8c5_thumb.jpg",
+      "youtube_video_id": "WJYRE0I2f2o",
+      "youtube_url": "https://youtu.be/WJYRE0I2f2o"
+    }
   }
 }
