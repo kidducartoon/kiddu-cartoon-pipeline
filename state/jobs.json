@@ -2265,16 +2265,118 @@
     "video_type": "short",
     "slot_time_ist": "12:00",
     "mood": "happy",
-    "status": "QUEUED",
+    "status": "PUBLISHED",
     "created_at": "2026-08-09T06:31:26.296765+00:00",
-    "updated_at": "2026-08-09T06:31:26.296771+00:00",
+    "updated_at": "2026-08-09T06:48:43.045254+00:00",
     "history": [
       {
         "status": "QUEUED",
         "at": "2026-08-09T06:31:26.296774+00:00"
+      },
+      {
+        "status": "SCRIPTED",
+        "at": "2026-08-09T06:46:18.854143+00:00"
+      },
+      {
+        "status": "SCORED",
+        "at": "2026-08-09T06:46:26.155917+00:00"
+      },
+      {
+        "status": "ANIMATED",
+        "at": "2026-08-09T06:48:31.534062+00:00"
+      },
+      {
+        "status": "RENDERED",
+        "at": "2026-08-09T06:48:40.743064+00:00"
+      },
+      {
+        "status": "PUBLISHED",
+        "at": "2026-08-09T06:48:43.045268+00:00"
       }
     ],
     "error": null,
-    "data": {}
+    "data": {
+      "script": {
+        "title": "Mithu की मस्ती भरी कहानी",
+        "title_english_transliteration": "Mithu Ki Masti Bhari Kahani",
+        "mood": "playful",
+        "character": {
+          "name": "Mithu",
+          "appearance": "a small fluffy yellow chick with a tiny orange beak, red bow on head, round soft body",
+          "personality": "playful, energetic, always singing"
+        },
+        "background_setting": "a gentle riverside with smooth stones and swaying reeds",
+        "lyrics_lines": [
+          "Mithu गिने एक दो तीन",
+          "फिर गिने चार पांच छह",
+          "सात आठ नौ फिर दस",
+          "गिनती करे वो बस",
+          "सबको सिखाए गिनना संग",
+          "मस्ती में मने ये रंग"
+        ],
+        "scenes": [
+          {
+            "line_index": 0,
+            "scene_description": "Mithu counting on fingers excitedly",
+            "camera_move": "zoom-in"
+          },
+          {
+            "line_index": 1,
+            "scene_description": "Mithu hopping and counting more",
+            "camera_move": "pan-left"
+          },
+          {
+            "line_index": 2,
+            "scene_description": "Mithu pointing at things while counting",
+            "camera_move": "pan-right"
+          },
+          {
+            "line_index": 3,
+            "scene_description": "Mithu finishing the count happily",
+            "camera_move": "static"
+          },
+          {
+            "line_index": 4,
+            "scene_description": "Mithu teaching friends to count together",
+            "camera_move": "zoom-out"
+          },
+          {
+            "line_index": 5,
+            "scene_description": "Mithu and friends celebrating with colors",
+            "camera_move": "zoom-out"
+          }
+        ],
+        "youtube_tags": [
+          "mithu hindi song",
+          "hindi kids song",
+          "bacchon ke geet",
+          "hindi cartoon",
+          "hindi rhymes",
+          "kids cartoon hindi",
+          "hindi nursery rhymes",
+          "cartoon for kids",
+          "hindi balgeet",
+          "kiddu cartoon",
+          "bachon ka gana",
+          "animated hindi song"
+        ],
+        "youtube_description": "Mithu ka ek pyara sa gaana bacchon ke liye! An original animated Hindi kids' song, made with love for little ones."
+      },
+      "song_path": "/tmp/kiddu_pipeline/music/20260809_1200_short_3c0996/20260809_1200_short_3c0996_final_song.wav",
+      "line_durations": [
+        2.076923076923077,
+        1.153846153846154,
+        1.3846153846153846,
+        1.153846153846154,
+        1.6153846153846154,
+        1.6153846153846154
+      ],
+      "tempo_bpm": 130,
+      "silent_video_path": "/tmp/kiddu_pipeline/video/20260809_1200_short_3c0996/20260809_1200_short_3c0996_silent_video.mp4",
+      "final_video": "/tmp/kiddu_pipeline/final/20260809_1200_short_3c0996/20260809_1200_short_3c0996_short.mp4",
+      "thumbnail": "/tmp/kiddu_pipeline/final/20260809_1200_short_3c0996/20260809_1200_short_3c0996_thumb.jpg",
+      "youtube_video_id": "I91al2l8A2s",
+      "youtube_url": "https://youtu.be/I91al2l8A2s"
+    }
   }
 }
