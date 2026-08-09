@@ -2384,16 +2384,118 @@
     "video_type": "long",
     "slot_time_ist": "14:00",
     "mood": "happy",
-    "status": "QUEUED",
+    "status": "PUBLISHED",
     "created_at": "2026-08-09T08:32:13.037656+00:00",
-    "updated_at": "2026-08-09T08:32:13.037662+00:00",
+    "updated_at": "2026-08-09T08:49:21.548607+00:00",
     "history": [
       {
         "status": "QUEUED",
         "at": "2026-08-09T08:32:13.037665+00:00"
+      },
+      {
+        "status": "SCRIPTED",
+        "at": "2026-08-09T08:46:15.072081+00:00"
+      },
+      {
+        "status": "SCORED",
+        "at": "2026-08-09T08:46:24.642677+00:00"
+      },
+      {
+        "status": "ANIMATED",
+        "at": "2026-08-09T08:49:14.459128+00:00"
+      },
+      {
+        "status": "RENDERED",
+        "at": "2026-08-09T08:49:19.910008+00:00"
+      },
+      {
+        "status": "PUBLISHED",
+        "at": "2026-08-09T08:49:21.548622+00:00"
       }
     ],
     "error": null,
-    "data": {}
+    "data": {
+      "script": {
+        "title": "Golu की मस्ती भरी कहानी",
+        "title_english_transliteration": "Golu Ki Masti Bhari Kahani",
+        "mood": "calm",
+        "character": {
+          "name": "Golu",
+          "appearance": "a spotted baby giraffe with a yellow bandana, long eyelashes, gentle smile",
+          "personality": "shy but curious, loves exploring"
+        },
+        "background_setting": "a starlit night sky over a quiet hillside with fireflies glowing",
+        "lyrics_lines": [
+          "Golu सोता चुपचाप रात में",
+          "तारे चमके आसमान में",
+          "चंदा मामा दे रहे प्यार",
+          "नींद में सपनों की बहार",
+          "मम्मी गाए लोरी प्यारी",
+          "सो जाए दुनिया सारी"
+        ],
+        "scenes": [
+          {
+            "line_index": 0,
+            "scene_description": "Golu lying down peacefully under the stars",
+            "camera_move": "static"
+          },
+          {
+            "line_index": 1,
+            "scene_description": "twinkling stars filling the night sky",
+            "camera_move": "zoom-out"
+          },
+          {
+            "line_index": 2,
+            "scene_description": "the moon glowing softly above",
+            "camera_move": "pan-right"
+          },
+          {
+            "line_index": 3,
+            "scene_description": "Golu dreaming happily with a gentle smile",
+            "camera_move": "zoom-in"
+          },
+          {
+            "line_index": 4,
+            "scene_description": "a warm cozy scene of comfort and love",
+            "camera_move": "static"
+          },
+          {
+            "line_index": 5,
+            "scene_description": "the whole scene settling into peaceful sleep",
+            "camera_move": "zoom-out"
+          }
+        ],
+        "youtube_tags": [
+          "golu hindi song",
+          "hindi kids song",
+          "bacchon ke geet",
+          "hindi cartoon",
+          "hindi rhymes",
+          "kids cartoon hindi",
+          "hindi nursery rhymes",
+          "cartoon for kids",
+          "hindi balgeet",
+          "kiddu cartoon",
+          "bachon ka gana",
+          "animated hindi song"
+        ],
+        "youtube_description": "Golu ka ek pyara sa gaana bacchon ke liye! An original animated Hindi kids' song, made with love for little ones."
+      },
+      "song_path": "/tmp/kiddu_pipeline/music/20260809_1400_long_8e9b2c/20260809_1400_long_8e9b2c_final_song.wav",
+      "line_durations": [
+        2.258064516129032,
+        1.935483870967742,
+        2.258064516129032,
+        3.225806451612903,
+        1.935483870967742,
+        1.935483870967742
+      ],
+      "tempo_bpm": 93,
+      "silent_video_path": "/tmp/kiddu_pipeline/video/20260809_1400_long_8e9b2c/20260809_1400_long_8e9b2c_silent_video.mp4",
+      "final_video": "/tmp/kiddu_pipeline/final/20260809_1400_long_8e9b2c/20260809_1400_long_8e9b2c_titled.mp4",
+      "thumbnail": "/tmp/kiddu_pipeline/final/20260809_1400_long_8e9b2c/20260809_1400_long_8e9b2c_thumb.jpg",
+      "youtube_video_id": "1AmJr0fXxmQ",
+      "youtube_url": "https://youtu.be/1AmJr0fXxmQ"
+    }
   }
 }
