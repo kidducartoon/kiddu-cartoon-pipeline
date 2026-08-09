@@ -2378,5 +2378,22 @@
       "youtube_video_id": "I91al2l8A2s",
       "youtube_url": "https://youtu.be/I91al2l8A2s"
     }
+  },
+  "20260809_1400_long_8e9b2c": {
+    "job_id": "20260809_1400_long_8e9b2c",
+    "video_type": "long",
+    "slot_time_ist": "14:00",
+    "mood": "happy",
+    "status": "QUEUED",
+    "created_at": "2026-08-09T08:32:13.037656+00:00",
+    "updated_at": "2026-08-09T08:32:13.037662+00:00",
+    "history": [
+      {
+        "status": "QUEUED",
+        "at": "2026-08-09T08:32:13.037665+00:00"
+      }
+    ],
+    "error": null,
+    "data": {}
   }
 }
