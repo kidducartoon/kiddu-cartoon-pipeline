@@ -3330,5 +3330,22 @@
       "youtube_video_id": "BzxhhlBtWIw",
       "youtube_url": "https://youtu.be/BzxhhlBtWIw"
     }
+  },
+  "20260810_1400_long_1ac67a": {
+    "job_id": "20260810_1400_long_1ac67a",
+    "video_type": "long",
+    "slot_time_ist": "14:00",
+    "mood": "happy",
+    "status": "QUEUED",
+    "created_at": "2026-08-10T08:31:13.185505+00:00",
+    "updated_at": "2026-08-10T08:31:13.185513+00:00",
+    "history": [
+      {
+        "status": "QUEUED",
+        "at": "2026-08-10T08:31:13.185515+00:00"
+      }
+    ],
+    "error": null,
+    "data": {}
   }
 }
