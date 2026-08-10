@@ -3568,5 +3568,22 @@
       "youtube_video_id": "Wl85AkRaLGY",
       "youtube_url": "https://youtu.be/Wl85AkRaLGY"
     }
+  },
+  "20260810_1800_long_1d583a": {
+    "job_id": "20260810_1800_long_1d583a",
+    "video_type": "long",
+    "slot_time_ist": "18:00",
+    "mood": "happy",
+    "status": "QUEUED",
+    "created_at": "2026-08-10T12:31:17.614355+00:00",
+    "updated_at": "2026-08-10T12:31:17.614363+00:00",
+    "history": [
+      {
+        "status": "QUEUED",
+        "at": "2026-08-10T12:31:17.614366+00:00"
+      }
+    ],
+    "error": null,
+    "data": {}
   }
 }
