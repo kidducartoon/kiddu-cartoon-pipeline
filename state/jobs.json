@@ -3693,16 +3693,118 @@
     "video_type": "short",
     "slot_time_ist": "20:00",
     "mood": "happy",
-    "status": "QUEUED",
+    "status": "PUBLISHED",
     "created_at": "2026-08-10T14:31:13.437997+00:00",
-    "updated_at": "2026-08-10T14:31:13.438004+00:00",
+    "updated_at": "2026-08-10T14:48:51.990078+00:00",
     "history": [
       {
         "status": "QUEUED",
         "at": "2026-08-10T14:31:13.438007+00:00"
+      },
+      {
+        "status": "SCRIPTED",
+        "at": "2026-08-10T14:46:34.210584+00:00"
+      },
+      {
+        "status": "SCORED",
+        "at": "2026-08-10T14:46:41.771013+00:00"
+      },
+      {
+        "status": "ANIMATED",
+        "at": "2026-08-10T14:48:39.508329+00:00"
+      },
+      {
+        "status": "RENDERED",
+        "at": "2026-08-10T14:48:50.096766+00:00"
+      },
+      {
+        "status": "PUBLISHED",
+        "at": "2026-08-10T14:48:51.990093+00:00"
       }
     ],
     "error": null,
-    "data": {}
+    "data": {
+      "script": {
+        "title": "Bunty की मस्ती भरी कहानी",
+        "title_english_transliteration": "Bunty Ki Masti Bhari Kahani",
+        "mood": "playful",
+        "character": {
+          "name": "Bunty",
+          "appearance": "a chubby brown bear cub with a green scarf, round ears, warm smile",
+          "personality": "gentle, sleepy, loves helping others"
+        },
+        "background_setting": "a starlit night sky over a quiet hillside with fireflies glowing",
+        "lyrics_lines": [
+          "Bunty गिने एक दो तीन",
+          "फिर गिने चार पांच छह",
+          "सात आठ नौ फिर दस",
+          "गिनती करे वो बस",
+          "सबको सिखाए गिनना संग",
+          "मस्ती में मने ये रंग"
+        ],
+        "scenes": [
+          {
+            "line_index": 0,
+            "scene_description": "Bunty counting on fingers excitedly",
+            "camera_move": "zoom-in"
+          },
+          {
+            "line_index": 1,
+            "scene_description": "Bunty hopping and counting more",
+            "camera_move": "pan-left"
+          },
+          {
+            "line_index": 2,
+            "scene_description": "Bunty pointing at things while counting",
+            "camera_move": "pan-right"
+          },
+          {
+            "line_index": 3,
+            "scene_description": "Bunty finishing the count happily",
+            "camera_move": "static"
+          },
+          {
+            "line_index": 4,
+            "scene_description": "Bunty teaching friends to count together",
+            "camera_move": "zoom-out"
+          },
+          {
+            "line_index": 5,
+            "scene_description": "Bunty and friends celebrating with colors",
+            "camera_move": "zoom-out"
+          }
+        ],
+        "youtube_tags": [
+          "bunty hindi song",
+          "hindi kids song",
+          "bacchon ke geet",
+          "hindi cartoon",
+          "hindi rhymes",
+          "kids cartoon hindi",
+          "hindi nursery rhymes",
+          "cartoon for kids",
+          "hindi balgeet",
+          "kiddu cartoon",
+          "bachon ka gana",
+          "animated hindi song"
+        ],
+        "youtube_description": "Bunty ka ek pyara sa gaana bacchon ke liye! An original animated Hindi kids' song, made with love for little ones."
+      },
+      "song_path": "/tmp/kiddu_pipeline/music/20260810_2000_short_a35f16/20260810_2000_short_a35f16_final_song.wav",
+      "line_durations": [
+        1.7647058823529411,
+        1.7647058823529411,
+        1.5126050420168067,
+        1.7647058823529411,
+        2.26890756302521,
+        1.5126050420168067
+      ],
+      "tempo_bpm": 119,
+      "silent_video_path": "/tmp/kiddu_pipeline/video/20260810_2000_short_a35f16/20260810_2000_short_a35f16_silent_video.mp4",
+      "final_video": "/tmp/kiddu_pipeline/final/20260810_2000_short_a35f16/20260810_2000_short_a35f16_short.mp4",
+      "thumbnail": "/tmp/kiddu_pipeline/final/20260810_2000_short_a35f16/20260810_2000_short_a35f16_thumb.jpg",
+      "youtube_video_id": "ydkBPLHoAqs",
+      "youtube_url": "https://youtu.be/ydkBPLHoAqs"
+    }
   }
 }
