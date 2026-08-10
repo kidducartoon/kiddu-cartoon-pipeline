@@ -3217,16 +3217,118 @@
     "video_type": "short",
     "slot_time_ist": "12:00",
     "mood": "happy",
-    "status": "QUEUED",
+    "status": "PUBLISHED",
     "created_at": "2026-08-10T06:31:13.657529+00:00",
-    "updated_at": "2026-08-10T06:31:13.657537+00:00",
+    "updated_at": "2026-08-10T06:48:50.315014+00:00",
     "history": [
       {
         "status": "QUEUED",
         "at": "2026-08-10T06:31:13.657540+00:00"
+      },
+      {
+        "status": "SCRIPTED",
+        "at": "2026-08-10T06:46:29.307270+00:00"
+      },
+      {
+        "status": "SCORED",
+        "at": "2026-08-10T06:46:37.146005+00:00"
+      },
+      {
+        "status": "ANIMATED",
+        "at": "2026-08-10T06:48:36.208874+00:00"
+      },
+      {
+        "status": "RENDERED",
+        "at": "2026-08-10T06:48:47.282865+00:00"
+      },
+      {
+        "status": "PUBLISHED",
+        "at": "2026-08-10T06:48:50.315028+00:00"
       }
     ],
     "error": null,
-    "data": {}
+    "data": {
+      "script": {
+        "title": "Chintu की मस्ती भरी कहानी",
+        "title_english_transliteration": "Chintu Ki Masti Bhari Kahani",
+        "mood": "playful",
+        "character": {
+          "name": "Chintu",
+          "appearance": "a cheerful round baby elephant, light blue skin, big floppy ears, small red bow tie, big friendly eyes",
+          "personality": "curious, kind, loves making friends"
+        },
+        "background_setting": "a cozy village courtyard with mango trees and a small well",
+        "lyrics_lines": [
+          "Chintu गिने एक दो तीन",
+          "फिर गिने चार पांच छह",
+          "सात आठ नौ फिर दस",
+          "गिनती करे वो बस",
+          "सबको सिखाए गिनना संग",
+          "मस्ती में मने ये रंग"
+        ],
+        "scenes": [
+          {
+            "line_index": 0,
+            "scene_description": "Chintu counting on fingers excitedly",
+            "camera_move": "zoom-in"
+          },
+          {
+            "line_index": 1,
+            "scene_description": "Chintu hopping and counting more",
+            "camera_move": "pan-left"
+          },
+          {
+            "line_index": 2,
+            "scene_description": "Chintu pointing at things while counting",
+            "camera_move": "pan-right"
+          },
+          {
+            "line_index": 3,
+            "scene_description": "Chintu finishing the count happily",
+            "camera_move": "static"
+          },
+          {
+            "line_index": 4,
+            "scene_description": "Chintu teaching friends to count together",
+            "camera_move": "zoom-out"
+          },
+          {
+            "line_index": 5,
+            "scene_description": "Chintu and friends celebrating with colors",
+            "camera_move": "zoom-out"
+          }
+        ],
+        "youtube_tags": [
+          "chintu hindi song",
+          "hindi kids song",
+          "bacchon ke geet",
+          "hindi cartoon",
+          "hindi rhymes",
+          "kids cartoon hindi",
+          "hindi nursery rhymes",
+          "cartoon for kids",
+          "hindi balgeet",
+          "kiddu cartoon",
+          "bachon ka gana",
+          "animated hindi song"
+        ],
+        "youtube_description": "Chintu ka ek pyara sa gaana bacchon ke liye! An original animated Hindi kids' song, made with love for little ones."
+      },
+      "song_path": "/tmp/kiddu_pipeline/music/20260810_1200_short_d929b5/20260810_1200_short_d929b5_final_song.wav",
+      "line_durations": [
+        2.17741935483871,
+        1.4516129032258065,
+        1.4516129032258065,
+        2.17741935483871,
+        2.17741935483871,
+        1.4516129032258065
+      ],
+      "tempo_bpm": 124,
+      "silent_video_path": "/tmp/kiddu_pipeline/video/20260810_1200_short_d929b5/20260810_1200_short_d929b5_silent_video.mp4",
+      "final_video": "/tmp/kiddu_pipeline/final/20260810_1200_short_d929b5/20260810_1200_short_d929b5_short.mp4",
+      "thumbnail": "/tmp/kiddu_pipeline/final/20260810_1200_short_d929b5/20260810_1200_short_d929b5_thumb.jpg",
+      "youtube_video_id": "BzxhhlBtWIw",
+      "youtube_url": "https://youtu.be/BzxhhlBtWIw"
+    }
   }
 }
