@@ -4501,5 +4501,22 @@
       "youtube_video_id": "5oUF-wCWkZk",
       "youtube_url": "https://youtu.be/5oUF-wCWkZk"
     }
+  },
+  "20260811_2000_short_429555": {
+    "job_id": "20260811_2000_short_429555",
+    "video_type": "short",
+    "slot_time_ist": "20:00",
+    "mood": "happy",
+    "status": "QUEUED",
+    "created_at": "2026-08-11T14:31:16.232135+00:00",
+    "updated_at": "2026-08-11T14:31:16.232142+00:00",
+    "history": [
+      {
+        "status": "QUEUED",
+        "at": "2026-08-11T14:31:16.232144+00:00"
+      }
+    ],
+    "error": null,
+    "data": {}
   }
 }
