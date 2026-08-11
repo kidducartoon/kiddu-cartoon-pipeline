@@ -3933,7 +3933,7 @@
     "mood": "happy",
     "status": "FAILED_publish",
     "created_at": "2026-08-11T02:31:38.880555+00:00",
-    "updated_at": "2026-08-11T06:16:01.711928+00:00",
+    "updated_at": "2026-08-11T06:31:13.195113+00:00",
     "history": [
       {
         "status": "QUEUED",
@@ -4028,6 +4028,11 @@
       {
         "status": "FAILED_publish",
         "at": "2026-08-11T06:16:01.711950+00:00",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260811_0800_short_cadd35/20260811_0800_short_cadd35_short.mp4'"
+      },
+      {
+        "status": "FAILED_publish",
+        "at": "2026-08-11T06:31:13.195128+00:00",
         "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260811_0800_short_cadd35/20260811_0800_short_cadd35_short.mp4'"
       }
     ],
