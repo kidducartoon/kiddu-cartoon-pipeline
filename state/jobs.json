@@ -3925,5 +3925,22 @@
       "youtube_video_id": "KfthQtn1idY",
       "youtube_url": "https://youtu.be/KfthQtn1idY"
     }
+  },
+  "20260811_0800_short_cadd35": {
+    "job_id": "20260811_0800_short_cadd35",
+    "video_type": "short",
+    "slot_time_ist": "08:00",
+    "mood": "happy",
+    "status": "QUEUED",
+    "created_at": "2026-08-11T02:31:38.880555+00:00",
+    "updated_at": "2026-08-11T02:31:38.880562+00:00",
+    "history": [
+      {
+        "status": "QUEUED",
+        "at": "2026-08-11T02:31:38.880565+00:00"
+      }
+    ],
+    "error": null,
+    "data": {}
   }
 }
