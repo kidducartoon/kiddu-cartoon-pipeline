@@ -5089,5 +5089,22 @@
       "youtube_video_id": "nN34avt1_qg",
       "youtube_url": "https://youtu.be/nN34avt1_qg"
     }
+  },
+  "20260812_1400_long_b7a5c6": {
+    "job_id": "20260812_1400_long_b7a5c6",
+    "video_type": "long",
+    "slot_time_ist": "14:00",
+    "mood": "happy",
+    "status": "QUEUED",
+    "created_at": "2026-08-12T08:31:11.790254+00:00",
+    "updated_at": "2026-08-12T08:31:11.790262+00:00",
+    "history": [
+      {
+        "status": "QUEUED",
+        "at": "2026-08-12T08:31:11.790264+00:00"
+      }
+    ],
+    "error": null,
+    "data": {}
   }
 }
