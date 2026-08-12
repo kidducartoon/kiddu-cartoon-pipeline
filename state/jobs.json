@@ -3933,7 +3933,7 @@
     "mood": "happy",
     "status": "FAILED_publish",
     "created_at": "2026-08-11T02:31:38.880555+00:00",
-    "updated_at": "2026-08-12T04:16:03.097541+00:00",
+    "updated_at": "2026-08-12T04:48:35.799524+00:00",
     "history": [
       {
         "status": "QUEUED",
@@ -4454,6 +4454,11 @@
         "status": "FAILED_publish",
         "at": "2026-08-12T04:16:03.097557+00:00",
         "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260811_0800_short_cadd35/20260811_0800_short_cadd35_short.mp4'"
+      },
+      {
+        "status": "FAILED_publish",
+        "at": "2026-08-12T04:48:35.799534+00:00",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260811_0800_short_cadd35/20260811_0800_short_cadd35_short.mp4'"
       }
     ],
     "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260811_0800_short_cadd35/20260811_0800_short_cadd35_short.mp4'",
@@ -4901,16 +4906,118 @@
     "video_type": "long",
     "slot_time_ist": "10:00",
     "mood": "happy",
-    "status": "QUEUED",
+    "status": "PUBLISHED",
     "created_at": "2026-08-12T04:31:07.060985+00:00",
-    "updated_at": "2026-08-12T04:31:07.060991+00:00",
+    "updated_at": "2026-08-12T04:48:35.792198+00:00",
     "history": [
       {
         "status": "QUEUED",
         "at": "2026-08-12T04:31:07.060994+00:00"
+      },
+      {
+        "status": "SCRIPTED",
+        "at": "2026-08-12T04:46:44.270402+00:00"
+      },
+      {
+        "status": "SCORED",
+        "at": "2026-08-12T04:46:51.765597+00:00"
+      },
+      {
+        "status": "ANIMATED",
+        "at": "2026-08-12T04:48:29.608139+00:00"
+      },
+      {
+        "status": "RENDERED",
+        "at": "2026-08-12T04:48:33.586426+00:00"
+      },
+      {
+        "status": "PUBLISHED",
+        "at": "2026-08-12T04:48:35.792213+00:00"
       }
     ],
     "error": null,
-    "data": {}
+    "data": {
+      "script": {
+        "title": "Pinki की मस्ती भरी कहानी",
+        "title_english_transliteration": "Pinki Ki Masti Bhari Kahani",
+        "mood": "playful",
+        "character": {
+          "name": "Pinki",
+          "appearance": "a small pink baby rabbit with long floppy ears, a polka dot bow, twitchy nose",
+          "personality": "bouncy, cheerful, loves to dance"
+        },
+        "background_setting": "a gentle riverside with smooth stones and swaying reeds",
+        "lyrics_lines": [
+          "Pinki बांटे अपनी मिठाई",
+          "दोस्तों संग खाए भाई",
+          "साथ मिलकर खेले खेल",
+          "मस्ती में हो अच्छा मेल",
+          "एक दूजे की मदद करें",
+          "प्यार से मिलजुल कर रहें"
+        ],
+        "scenes": [
+          {
+            "line_index": 0,
+            "scene_description": "Pinki sharing sweets with friends happily",
+            "camera_move": "pan-left"
+          },
+          {
+            "line_index": 1,
+            "scene_description": "Pinki and friends eating together",
+            "camera_move": "zoom-in"
+          },
+          {
+            "line_index": 2,
+            "scene_description": "Pinki and friends playing a fun game",
+            "camera_move": "pan-right"
+          },
+          {
+            "line_index": 3,
+            "scene_description": "everyone laughing and having fun together",
+            "camera_move": "zoom-out"
+          },
+          {
+            "line_index": 4,
+            "scene_description": "Pinki helping a friend who needs it",
+            "camera_move": "static"
+          },
+          {
+            "line_index": 5,
+            "scene_description": "the whole group together in friendship",
+            "camera_move": "zoom-out"
+          }
+        ],
+        "youtube_tags": [
+          "pinki hindi song",
+          "hindi kids song",
+          "bacchon ke geet",
+          "hindi cartoon",
+          "hindi rhymes",
+          "kids cartoon hindi",
+          "hindi nursery rhymes",
+          "cartoon for kids",
+          "hindi balgeet",
+          "kiddu cartoon",
+          "bachon ka gana",
+          "animated hindi song"
+        ],
+        "youtube_description": "Pinki ka ek pyara sa gaana bacchon ke liye! An original animated Hindi kids' song, made with love for little ones."
+      },
+      "song_path": "/tmp/kiddu_pipeline/music/20260812_1000_long_8608df/20260812_1000_long_8608df_final_song.wav",
+      "line_durations": [
+        1.3392857142857142,
+        1.875,
+        1.6071428571428572,
+        1.6071428571428572,
+        1.3392857142857142,
+        3.482142857142857
+      ],
+      "tempo_bpm": 112,
+      "silent_video_path": "/tmp/kiddu_pipeline/video/20260812_1000_long_8608df/20260812_1000_long_8608df_silent_video.mp4",
+      "final_video": "/tmp/kiddu_pipeline/final/20260812_1000_long_8608df/20260812_1000_long_8608df_titled.mp4",
+      "thumbnail": "/tmp/kiddu_pipeline/final/20260812_1000_long_8608df/20260812_1000_long_8608df_thumb.jpg",
+      "youtube_video_id": "nN34avt1_qg",
+      "youtube_url": "https://youtu.be/nN34avt1_qg"
+    }
   }
 }
