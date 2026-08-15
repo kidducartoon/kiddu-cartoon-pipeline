@@ -3933,7 +3933,7 @@
     "mood": "happy",
     "status": "FAILED_publish",
     "created_at": "2026-08-11T02:31:38.880555+00:00",
-    "updated_at": "2026-08-15T12:16:08.016738+00:00",
+    "updated_at": "2026-08-15T12:48:51.645719+00:00",
     "history": [
       {
         "status": "QUEUED",
@@ -6044,6 +6044,11 @@
         "status": "FAILED_publish",
         "at": "2026-08-15T12:16:08.016754+00:00",
         "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260811_0800_short_cadd35/20260811_0800_short_cadd35_short.mp4'"
+      },
+      {
+        "status": "FAILED_publish",
+        "at": "2026-08-15T12:48:51.645727+00:00",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260811_0800_short_cadd35/20260811_0800_short_cadd35_short.mp4'"
       }
     ],
     "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260811_0800_short_cadd35/20260811_0800_short_cadd35_short.mp4'",
@@ -6729,16 +6734,117 @@
     "video_type": "long",
     "slot_time_ist": "18:00",
     "mood": "happy",
-    "status": "QUEUED",
+    "status": "FAILED_publish",
     "created_at": "2026-08-15T12:31:09.681787+00:00",
-    "updated_at": "2026-08-15T12:31:09.681794+00:00",
+    "updated_at": "2026-08-15T12:48:51.636564+00:00",
     "history": [
       {
         "status": "QUEUED",
         "at": "2026-08-15T12:31:09.681797+00:00"
+      },
+      {
+        "status": "SCRIPTED",
+        "at": "2026-08-15T12:46:32.757166+00:00"
+      },
+      {
+        "status": "SCORED",
+        "at": "2026-08-15T12:46:40.117783+00:00"
+      },
+      {
+        "status": "ANIMATED",
+        "at": "2026-08-15T12:48:47.931041+00:00"
+      },
+      {
+        "status": "RENDERED",
+        "at": "2026-08-15T12:48:51.398655+00:00"
+      },
+      {
+        "status": "FAILED_publish",
+        "at": "2026-08-15T12:48:51.636581+00:00",
+        "error": "RefreshError: ('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})"
       }
     ],
-    "error": null,
-    "data": {}
+    "error": "RefreshError: ('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})",
+    "data": {
+      "script": {
+        "title": "Bunty की मस्ती भरी कहानी",
+        "title_english_transliteration": "Bunty Ki Masti Bhari Kahani",
+        "mood": "playful",
+        "character": {
+          "name": "Bunty",
+          "appearance": "a chubby brown bear cub with a green scarf, round ears, warm smile",
+          "personality": "gentle, sleepy, loves helping others"
+        },
+        "background_setting": "a rainbow-colored garden full of butterflies and blooming flowers",
+        "lyrics_lines": [
+          "Bunty गिने एक दो तीन",
+          "फिर गिने चार पांच छह",
+          "सात आठ नौ फिर दस",
+          "गिनती करे वो बस",
+          "सबको सिखाए गिनना संग",
+          "मस्ती में मने ये रंग"
+        ],
+        "scenes": [
+          {
+            "line_index": 0,
+            "scene_description": "Bunty counting on fingers excitedly",
+            "camera_move": "zoom-in"
+          },
+          {
+            "line_index": 1,
+            "scene_description": "Bunty hopping and counting more",
+            "camera_move": "pan-left"
+          },
+          {
+            "line_index": 2,
+            "scene_description": "Bunty pointing at things while counting",
+            "camera_move": "pan-right"
+          },
+          {
+            "line_index": 3,
+            "scene_description": "Bunty finishing the count happily",
+            "camera_move": "static"
+          },
+          {
+            "line_index": 4,
+            "scene_description": "Bunty teaching friends to count together",
+            "camera_move": "zoom-out"
+          },
+          {
+            "line_index": 5,
+            "scene_description": "Bunty and friends celebrating with colors",
+            "camera_move": "zoom-out"
+          }
+        ],
+        "youtube_tags": [
+          "bunty hindi song",
+          "hindi kids song",
+          "bacchon ke geet",
+          "hindi cartoon",
+          "hindi rhymes",
+          "kids cartoon hindi",
+          "hindi nursery rhymes",
+          "cartoon for kids",
+          "hindi balgeet",
+          "kiddu cartoon",
+          "bachon ka gana",
+          "animated hindi song"
+        ],
+        "youtube_description": "Bunty ka ek pyara sa gaana bacchon ke liye! An original animated Hindi kids' song, made with love for little ones."
+      },
+      "song_path": "/tmp/kiddu_pipeline/music/20260815_1800_long_3b0d6a/20260815_1800_long_3b0d6a_final_song.wav",
+      "line_durations": [
+        2.1818181818181817,
+        1.909090909090909,
+        1.3636363636363635,
+        1.6363636363636362,
+        1.6363636363636362,
+        1.6363636363636362
+      ],
+      "tempo_bpm": 110,
+      "silent_video_path": "/tmp/kiddu_pipeline/video/20260815_1800_long_3b0d6a/20260815_1800_long_3b0d6a_silent_video.mp4",
+      "final_video": "/tmp/kiddu_pipeline/final/20260815_1800_long_3b0d6a/20260815_1800_long_3b0d6a_titled.mp4",
+      "thumbnail": "/tmp/kiddu_pipeline/final/20260815_1800_long_3b0d6a/20260815_1800_long_3b0d6a_thumb.jpg"
+    }
   }
 }
