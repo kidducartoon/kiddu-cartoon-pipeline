@@ -3933,7 +3933,7 @@
     "mood": "happy",
     "status": "FAILED_publish",
     "created_at": "2026-08-11T02:31:38.880555+00:00",
-    "updated_at": "2026-08-19T02:19:13.490343+00:00",
+    "updated_at": "2026-08-19T02:58:42.140337+00:00",
     "history": [
       {
         "status": "QUEUED",
@@ -7734,6 +7734,11 @@
         "status": "FAILED_publish",
         "at": "2026-08-19T02:19:13.490362+00:00",
         "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260811_0800_short_cadd35/20260811_0800_short_cadd35_short.mp4'"
+      },
+      {
+        "status": "FAILED_publish",
+        "at": "2026-08-19T02:58:42.140354+00:00",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260811_0800_short_cadd35/20260811_0800_short_cadd35_short.mp4'"
       }
     ],
     "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260811_0800_short_cadd35/20260811_0800_short_cadd35_short.mp4'",
@@ -8421,7 +8426,7 @@
     "mood": "happy",
     "status": "FAILED_publish",
     "created_at": "2026-08-15T12:31:09.681787+00:00",
-    "updated_at": "2026-08-19T02:19:13.511561+00:00",
+    "updated_at": "2026-08-19T02:58:42.159542+00:00",
     "history": [
       {
         "status": "QUEUED",
@@ -10132,6 +10137,11 @@
         "status": "FAILED_publish",
         "at": "2026-08-19T02:19:13.511576+00:00",
         "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260815_1800_long_3b0d6a/20260815_1800_long_3b0d6a_titled.mp4'"
+      },
+      {
+        "status": "FAILED_publish",
+        "at": "2026-08-19T02:58:42.159559+00:00",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260815_1800_long_3b0d6a/20260815_1800_long_3b0d6a_titled.mp4'"
       }
     ],
     "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260815_1800_long_3b0d6a/20260815_1800_long_3b0d6a_titled.mp4'",
@@ -10224,7 +10234,7 @@
     "mood": "happy",
     "status": "FAILED_publish",
     "created_at": "2026-08-16T06:31:17.566731+00:00",
-    "updated_at": "2026-08-19T02:19:13.532033+00:00",
+    "updated_at": "2026-08-19T02:58:42.178866+00:00",
     "history": [
       {
         "status": "QUEUED",
@@ -11580,6 +11590,11 @@
         "status": "FAILED_publish",
         "at": "2026-08-19T02:19:13.532045+00:00",
         "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260816_1200_short_af1afb/20260816_1200_short_af1afb_short.mp4'"
+      },
+      {
+        "status": "FAILED_publish",
+        "at": "2026-08-19T02:58:42.178883+00:00",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260816_1200_short_af1afb/20260816_1200_short_af1afb_short.mp4'"
       }
     ],
     "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260816_1200_short_af1afb/20260816_1200_short_af1afb_short.mp4'",
@@ -11672,7 +11687,7 @@
     "mood": "happy",
     "status": "FAILED_publish",
     "created_at": "2026-08-16T08:31:07.454395+00:00",
-    "updated_at": "2026-08-19T02:19:13.554511+00:00",
+    "updated_at": "2026-08-19T02:58:42.198060+00:00",
     "history": [
       {
         "status": "QUEUED",
@@ -12993,6 +13008,11 @@
         "status": "FAILED_publish",
         "at": "2026-08-19T02:19:13.554522+00:00",
         "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260816_1400_long_106c7f/20260816_1400_long_106c7f_titled.mp4'"
+      },
+      {
+        "status": "FAILED_publish",
+        "at": "2026-08-19T02:58:42.198076+00:00",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260816_1400_long_106c7f/20260816_1400_long_106c7f_titled.mp4'"
       }
     ],
     "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260816_1400_long_106c7f/20260816_1400_long_106c7f_titled.mp4'",
@@ -13085,7 +13105,7 @@
     "mood": "happy",
     "status": "FAILED_publish",
     "created_at": "2026-08-16T10:31:22.616698+00:00",
-    "updated_at": "2026-08-19T02:19:13.574611+00:00",
+    "updated_at": "2026-08-19T02:58:42.221897+00:00",
     "history": [
       {
         "status": "QUEUED",
@@ -14371,6 +14391,11 @@
         "status": "FAILED_publish",
         "at": "2026-08-19T02:19:13.574622+00:00",
         "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260816_1600_short_fb0d71/20260816_1600_short_fb0d71_short.mp4'"
+      },
+      {
+        "status": "FAILED_publish",
+        "at": "2026-08-19T02:58:42.221914+00:00",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260816_1600_short_fb0d71/20260816_1600_short_fb0d71_short.mp4'"
       }
     ],
     "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260816_1600_short_fb0d71/20260816_1600_short_fb0d71_short.mp4'",
@@ -14461,16 +14486,117 @@
     "video_type": "short",
     "slot_time_ist": "08:00",
     "mood": "happy",
-    "status": "QUEUED",
+    "status": "FAILED_publish",
     "created_at": "2026-08-19T02:32:59.358094+00:00",
-    "updated_at": "2026-08-19T02:32:59.358101+00:00",
+    "updated_at": "2026-08-19T02:58:42.120711+00:00",
     "history": [
       {
         "status": "QUEUED",
         "at": "2026-08-19T02:32:59.358104+00:00"
+      },
+      {
+        "status": "SCRIPTED",
+        "at": "2026-08-19T02:54:29.480795+00:00"
+      },
+      {
+        "status": "SCORED",
+        "at": "2026-08-19T02:54:39.164121+00:00"
+      },
+      {
+        "status": "ANIMATED",
+        "at": "2026-08-19T02:58:27.431792+00:00"
+      },
+      {
+        "status": "RENDERED",
+        "at": "2026-08-19T02:58:42.010746+00:00"
+      },
+      {
+        "status": "FAILED_publish",
+        "at": "2026-08-19T02:58:42.120727+00:00",
+        "error": "RefreshError: ('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})"
       }
     ],
-    "error": null,
-    "data": {}
+    "error": "RefreshError: ('invalid_grant: Token has been expired or revoked.', {'error': 'invalid_grant', 'error_description': 'Token has been expired or revoked.'})",
+    "data": {
+      "script": {
+        "title": "Chintu की मस्ती भरी कहानी",
+        "title_english_transliteration": "Chintu Ki Masti Bhari Kahani",
+        "mood": "playful",
+        "character": {
+          "name": "Chintu",
+          "appearance": "a cheerful round baby elephant, light blue skin, big floppy ears, small red bow tie, big friendly eyes",
+          "personality": "curious, kind, loves making friends"
+        },
+        "background_setting": "a sunny green meadow with tall trees, colorful flowers, and a small sparkling pond",
+        "lyrics_lines": [
+          "Chintu बांटे अपनी मिठाई",
+          "दोस्तों संग खाए भाई",
+          "साथ मिलकर खेले खेल",
+          "मस्ती में हो अच्छा मेल",
+          "एक दूजे की मदद करें",
+          "प्यार से मिलजुल कर रहें"
+        ],
+        "scenes": [
+          {
+            "line_index": 0,
+            "scene_description": "Chintu sharing sweets with friends happily",
+            "camera_move": "pan-left"
+          },
+          {
+            "line_index": 1,
+            "scene_description": "Chintu and friends eating together",
+            "camera_move": "zoom-in"
+          },
+          {
+            "line_index": 2,
+            "scene_description": "Chintu and friends playing a fun game",
+            "camera_move": "pan-right"
+          },
+          {
+            "line_index": 3,
+            "scene_description": "everyone laughing and having fun together",
+            "camera_move": "zoom-out"
+          },
+          {
+            "line_index": 4,
+            "scene_description": "Chintu helping a friend who needs it",
+            "camera_move": "static"
+          },
+          {
+            "line_index": 5,
+            "scene_description": "the whole group together in friendship",
+            "camera_move": "zoom-out"
+          }
+        ],
+        "youtube_tags": [
+          "chintu hindi song",
+          "hindi kids song",
+          "bacchon ke geet",
+          "hindi cartoon",
+          "hindi rhymes",
+          "kids cartoon hindi",
+          "hindi nursery rhymes",
+          "cartoon for kids",
+          "hindi balgeet",
+          "kiddu cartoon",
+          "bachon ka gana",
+          "animated hindi song"
+        ],
+        "youtube_description": "Chintu ka ek pyara sa gaana bacchon ke liye! An original animated Hindi kids' song, made with love for little ones."
+      },
+      "song_path": "/tmp/kiddu_pipeline/music/20260819_0800_short_e841bb/20260819_0800_short_e841bb_final_song.wav",
+      "line_durations": [
+        1.909090909090909,
+        1.6363636363636362,
+        1.6363636363636362,
+        1.6363636363636362,
+        1.909090909090909,
+        2.1818181818181817
+      ],
+      "tempo_bpm": 110,
+      "silent_video_path": "/tmp/kiddu_pipeline/video/20260819_0800_short_e841bb/20260819_0800_short_e841bb_silent_video.mp4",
+      "final_video": "/tmp/kiddu_pipeline/final/20260819_0800_short_e841bb/20260819_0800_short_e841bb_short.mp4",
+      "thumbnail": "/tmp/kiddu_pipeline/final/20260819_0800_short_e841bb/20260819_0800_short_e841bb_thumb.jpg"
+    }
   }
 }
