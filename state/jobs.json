@@ -70585,5 +70585,22 @@
       "final_video": "/tmp/kiddu_pipeline/final/20260828_1000_long_7bda7b/20260828_1000_long_7bda7b_titled.mp4",
       "thumbnail": "/tmp/kiddu_pipeline/final/20260828_1000_long_7bda7b/20260828_1000_long_7bda7b_thumb.jpg"
     }
+  },
+  "20260828_1400_long_4accac": {
+    "job_id": "20260828_1400_long_4accac",
+    "video_type": "long",
+    "slot_time_ist": "14:00",
+    "mood": "happy",
+    "status": "QUEUED",
+    "created_at": "2026-08-28T08:31:18.400722+00:00",
+    "updated_at": "2026-08-28T08:31:18.400733+00:00",
+    "history": [
+      {
+        "status": "QUEUED",
+        "at": "2026-08-28T08:31:18.400736+00:00"
+      }
+    ],
+    "error": null,
+    "data": {}
   }
 }
