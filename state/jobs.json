@@ -126751,5 +126751,22 @@
       "final_video": "/tmp/kiddu_pipeline/final/20260901_2000_short_42bf43/20260901_2000_short_42bf43_short.mp4",
       "thumbnail": "/tmp/kiddu_pipeline/final/20260901_2000_short_42bf43/20260901_2000_short_42bf43_thumb.jpg"
     }
+  },
+  "20260902_0600_long_6fe23a": {
+    "job_id": "20260902_0600_long_6fe23a",
+    "video_type": "long",
+    "slot_time_ist": "06:00",
+    "mood": "happy",
+    "status": "QUEUED",
+    "created_at": "2026-09-02T00:31:23.827894+00:00",
+    "updated_at": "2026-09-02T00:31:23.827932+00:00",
+    "history": [
+      {
+        "status": "QUEUED",
+        "at": "2026-09-02T00:31:23.827935+00:00"
+      }
+    ],
+    "error": null,
+    "data": {}
   }
 }
