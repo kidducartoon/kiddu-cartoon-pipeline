@@ -3933,7 +3933,7 @@
     "mood": "happy",
     "status": "FAILED_publish",
     "created_at": "2026-08-11T02:31:38.880555+00:00",
-    "updated_at": "2026-09-03T12:48:45.392606+00:00",
+    "updated_at": "2026-09-03T13:01:35.419883+00:00",
     "history": [
       {
         "status": "QUEUED",
@@ -14814,6 +14814,11 @@
         "status": "FAILED_publish",
         "at": "2026-09-03T12:48:45.392627+00:00",
         "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260811_0800_short_cadd35/20260811_0800_short_cadd35_short.mp4'"
+      },
+      {
+        "status": "FAILED_publish",
+        "at": "2026-09-03T13:01:35.419902+00:00",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260811_0800_short_cadd35/20260811_0800_short_cadd35_short.mp4'"
       }
     ],
     "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260811_0800_short_cadd35/20260811_0800_short_cadd35_short.mp4'",
@@ -15501,7 +15506,7 @@
     "mood": "happy",
     "status": "FAILED_publish",
     "created_at": "2026-08-15T12:31:09.681787+00:00",
-    "updated_at": "2026-09-03T12:48:45.545973+00:00",
+    "updated_at": "2026-09-03T13:01:35.611692+00:00",
     "history": [
       {
         "status": "QUEUED",
@@ -24292,6 +24297,11 @@
         "status": "FAILED_publish",
         "at": "2026-09-03T12:48:45.545991+00:00",
         "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260815_1800_long_3b0d6a/20260815_1800_long_3b0d6a_titled.mp4'"
+      },
+      {
+        "status": "FAILED_publish",
+        "at": "2026-09-03T13:01:35.611710+00:00",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260815_1800_long_3b0d6a/20260815_1800_long_3b0d6a_titled.mp4'"
       }
     ],
     "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260815_1800_long_3b0d6a/20260815_1800_long_3b0d6a_titled.mp4'",
@@ -24384,7 +24394,7 @@
     "mood": "happy",
     "status": "FAILED_publish",
     "created_at": "2026-08-16T06:31:17.566731+00:00",
-    "updated_at": "2026-09-03T12:48:45.749886+00:00",
+    "updated_at": "2026-09-03T13:01:35.800010+00:00",
     "history": [
       {
         "status": "QUEUED",
@@ -32820,6 +32830,11 @@
         "status": "FAILED_publish",
         "at": "2026-09-03T12:48:45.749903+00:00",
         "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260816_1200_short_af1afb/20260816_1200_short_af1afb_short.mp4'"
+      },
+      {
+        "status": "FAILED_publish",
+        "at": "2026-09-03T13:01:35.800038+00:00",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260816_1200_short_af1afb/20260816_1200_short_af1afb_short.mp4'"
       }
     ],
     "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260816_1200_short_af1afb/20260816_1200_short_af1afb_short.mp4'",
@@ -32912,7 +32927,7 @@
     "mood": "happy",
     "status": "FAILED_publish",
     "created_at": "2026-08-16T08:31:07.454395+00:00",
-    "updated_at": "2026-09-03T12:48:45.990783+00:00",
+    "updated_at": "2026-09-03T13:01:35.990245+00:00",
     "history": [
       {
         "status": "QUEUED",
@@ -41313,6 +41328,11 @@
         "status": "FAILED_publish",
         "at": "2026-09-03T12:48:45.990797+00:00",
         "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260816_1400_long_106c7f/20260816_1400_long_106c7f_titled.mp4'"
+      },
+      {
+        "status": "FAILED_publish",
+        "at": "2026-09-03T13:01:35.990263+00:00",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260816_1400_long_106c7f/20260816_1400_long_106c7f_titled.mp4'"
       }
     ],
     "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260816_1400_long_106c7f/20260816_1400_long_106c7f_titled.mp4'",
@@ -41405,7 +41425,7 @@
     "mood": "happy",
     "status": "FAILED_publish",
     "created_at": "2026-08-16T10:31:22.616698+00:00",
-    "updated_at": "2026-09-03T12:48:46.136460+00:00",
+    "updated_at": "2026-09-03T13:01:36.181604+00:00",
     "history": [
       {
         "status": "QUEUED",
@@ -49771,6 +49791,11 @@
         "status": "FAILED_publish",
         "at": "2026-09-03T12:48:46.136478+00:00",
         "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260816_1600_short_fb0d71/20260816_1600_short_fb0d71_short.mp4'"
+      },
+      {
+        "status": "FAILED_publish",
+        "at": "2026-09-03T13:01:36.181624+00:00",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260816_1600_short_fb0d71/20260816_1600_short_fb0d71_short.mp4'"
       }
     ],
     "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260816_1600_short_fb0d71/20260816_1600_short_fb0d71_short.mp4'",
@@ -49863,7 +49888,7 @@
     "mood": "happy",
     "status": "FAILED_publish",
     "created_at": "2026-08-19T02:32:59.358094+00:00",
-    "updated_at": "2026-09-03T12:48:46.266646+00:00",
+    "updated_at": "2026-09-03T13:01:36.370248+00:00",
     "history": [
       {
         "status": "QUEUED",
@@ -56964,6 +56989,11 @@
         "status": "FAILED_publish",
         "at": "2026-09-03T12:48:46.266665+00:00",
         "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260819_0800_short_e841bb/20260819_0800_short_e841bb_short.mp4'"
+      },
+      {
+        "status": "FAILED_publish",
+        "at": "2026-09-03T13:01:36.370267+00:00",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260819_0800_short_e841bb/20260819_0800_short_e841bb_short.mp4'"
       }
     ],
     "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260819_0800_short_e841bb/20260819_0800_short_e841bb_short.mp4'",
@@ -57056,7 +57086,7 @@
     "mood": "happy",
     "status": "FAILED_publish",
     "created_at": "2026-08-20T00:31:15.052422+00:00",
-    "updated_at": "2026-09-03T12:48:46.470879+00:00",
+    "updated_at": "2026-09-03T13:01:36.557066+00:00",
     "history": [
       {
         "status": "QUEUED",
@@ -63932,6 +63962,11 @@
         "status": "FAILED_publish",
         "at": "2026-09-03T12:48:46.470896+00:00",
         "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260820_0600_long_4dca5e/20260820_0600_long_4dca5e_titled.mp4'"
+      },
+      {
+        "status": "FAILED_publish",
+        "at": "2026-09-03T13:01:36.557114+00:00",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260820_0600_long_4dca5e/20260820_0600_long_4dca5e_titled.mp4'"
       }
     ],
     "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260820_0600_long_4dca5e/20260820_0600_long_4dca5e_titled.mp4'",
@@ -64024,7 +64059,7 @@
     "mood": "happy",
     "status": "FAILED_publish",
     "created_at": "2026-08-20T02:31:12.555066+00:00",
-    "updated_at": "2026-09-03T12:48:46.724136+00:00",
+    "updated_at": "2026-09-03T13:01:36.744687+00:00",
     "history": [
       {
         "status": "QUEUED",
@@ -70865,6 +70900,11 @@
         "status": "FAILED_publish",
         "at": "2026-09-03T12:48:46.724154+00:00",
         "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260820_0800_short_41a233/20260820_0800_short_41a233_short.mp4'"
+      },
+      {
+        "status": "FAILED_publish",
+        "at": "2026-09-03T13:01:36.744706+00:00",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260820_0800_short_41a233/20260820_0800_short_41a233_short.mp4'"
       }
     ],
     "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260820_0800_short_41a233/20260820_0800_short_41a233_short.mp4'",
@@ -70957,7 +70997,7 @@
     "mood": "happy",
     "status": "FAILED_publish",
     "created_at": "2026-08-22T06:31:13.825361+00:00",
-    "updated_at": "2026-09-03T12:48:46.853317+00:00",
+    "updated_at": "2026-09-03T13:01:36.929244+00:00",
     "history": [
       {
         "status": "QUEUED",
@@ -76763,6 +76803,11 @@
         "status": "FAILED_publish",
         "at": "2026-09-03T12:48:46.853336+00:00",
         "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260822_1200_short_b2fac4/20260822_1200_short_b2fac4_short.mp4'"
+      },
+      {
+        "status": "FAILED_publish",
+        "at": "2026-09-03T13:01:36.929261+00:00",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260822_1200_short_b2fac4/20260822_1200_short_b2fac4_short.mp4'"
       }
     ],
     "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260822_1200_short_b2fac4/20260822_1200_short_b2fac4_short.mp4'",
@@ -76855,7 +76900,7 @@
     "mood": "happy",
     "status": "FAILED_publish",
     "created_at": "2026-08-22T10:31:11.497275+00:00",
-    "updated_at": "2026-09-03T12:48:47.092756+00:00",
+    "updated_at": "2026-09-03T13:01:37.119115+00:00",
     "history": [
       {
         "status": "QUEUED",
@@ -82586,6 +82631,11 @@
         "status": "FAILED_publish",
         "at": "2026-09-03T12:48:47.092773+00:00",
         "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260822_1600_short_6f2517/20260822_1600_short_6f2517_short.mp4'"
+      },
+      {
+        "status": "FAILED_publish",
+        "at": "2026-09-03T13:01:37.119134+00:00",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260822_1600_short_6f2517/20260822_1600_short_6f2517_short.mp4'"
       }
     ],
     "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260822_1600_short_6f2517/20260822_1600_short_6f2517_short.mp4'",
@@ -82678,7 +82728,7 @@
     "mood": "happy",
     "status": "FAILED_publish",
     "created_at": "2026-08-23T00:31:17.031905+00:00",
-    "updated_at": "2026-09-03T12:48:47.228653+00:00",
+    "updated_at": "2026-09-03T13:01:37.305882+00:00",
     "history": [
       {
         "status": "QUEUED",
@@ -88134,6 +88184,11 @@
         "status": "FAILED_publish",
         "at": "2026-09-03T12:48:47.228673+00:00",
         "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260823_0600_long_775d8c/20260823_0600_long_775d8c_titled.mp4'"
+      },
+      {
+        "status": "FAILED_publish",
+        "at": "2026-09-03T13:01:37.305900+00:00",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260823_0600_long_775d8c/20260823_0600_long_775d8c_titled.mp4'"
       }
     ],
     "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260823_0600_long_775d8c/20260823_0600_long_775d8c_titled.mp4'",
@@ -88226,7 +88281,7 @@
     "mood": "happy",
     "status": "FAILED_publish",
     "created_at": "2026-08-23T10:31:10.329002+00:00",
-    "updated_at": "2026-09-03T12:48:47.368647+00:00",
+    "updated_at": "2026-09-03T13:01:37.491347+00:00",
     "history": [
       {
         "status": "QUEUED",
@@ -93487,6 +93542,11 @@
         "status": "FAILED_publish",
         "at": "2026-09-03T12:48:47.368667+00:00",
         "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260823_1600_short_4d2aa2/20260823_1600_short_4d2aa2_short.mp4'"
+      },
+      {
+        "status": "FAILED_publish",
+        "at": "2026-09-03T13:01:37.491364+00:00",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260823_1600_short_4d2aa2/20260823_1600_short_4d2aa2_short.mp4'"
       }
     ],
     "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260823_1600_short_4d2aa2/20260823_1600_short_4d2aa2_short.mp4'",
@@ -93579,7 +93639,7 @@
     "mood": "happy",
     "status": "FAILED_publish",
     "created_at": "2026-08-24T00:31:15.472955+00:00",
-    "updated_at": "2026-09-03T12:48:47.689732+00:00",
+    "updated_at": "2026-09-03T13:01:37.676678+00:00",
     "history": [
       {
         "status": "QUEUED",
@@ -98565,6 +98625,11 @@
         "status": "FAILED_publish",
         "at": "2026-09-03T12:48:47.689754+00:00",
         "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260824_0600_long_d86d03/20260824_0600_long_d86d03_titled.mp4'"
+      },
+      {
+        "status": "FAILED_publish",
+        "at": "2026-09-03T13:01:37.676697+00:00",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260824_0600_long_d86d03/20260824_0600_long_d86d03_titled.mp4'"
       }
     ],
     "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260824_0600_long_d86d03/20260824_0600_long_d86d03_titled.mp4'",
@@ -98657,7 +98722,7 @@
     "mood": "happy",
     "status": "FAILED_publish",
     "created_at": "2026-08-24T12:31:14.977798+00:00",
-    "updated_at": "2026-09-03T12:48:47.826673+00:00",
+    "updated_at": "2026-09-03T13:01:37.859960+00:00",
     "history": [
       {
         "status": "QUEUED",
@@ -103408,6 +103473,11 @@
         "status": "FAILED_publish",
         "at": "2026-09-03T12:48:47.826692+00:00",
         "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260824_1800_long_393391/20260824_1800_long_393391_titled.mp4'"
+      },
+      {
+        "status": "FAILED_publish",
+        "at": "2026-09-03T13:01:37.859978+00:00",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260824_1800_long_393391/20260824_1800_long_393391_titled.mp4'"
       }
     ],
     "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260824_1800_long_393391/20260824_1800_long_393391_titled.mp4'",
@@ -103500,7 +103570,7 @@
     "mood": "happy",
     "status": "FAILED_publish",
     "created_at": "2026-08-25T04:31:16.279875+00:00",
-    "updated_at": "2026-09-03T12:48:48.020931+00:00",
+    "updated_at": "2026-09-03T13:01:38.043293+00:00",
     "history": [
       {
         "status": "QUEUED",
@@ -107936,6 +108006,11 @@
         "status": "FAILED_publish",
         "at": "2026-09-03T12:48:48.020951+00:00",
         "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260825_1000_long_44970b/20260825_1000_long_44970b_titled.mp4'"
+      },
+      {
+        "status": "FAILED_publish",
+        "at": "2026-09-03T13:01:38.043313+00:00",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260825_1000_long_44970b/20260825_1000_long_44970b_titled.mp4'"
       }
     ],
     "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260825_1000_long_44970b/20260825_1000_long_44970b_titled.mp4'",
@@ -108028,7 +108103,7 @@
     "mood": "happy",
     "status": "FAILED_publish",
     "created_at": "2026-08-25T08:31:18.236831+00:00",
-    "updated_at": "2026-09-03T12:48:48.161243+00:00",
+    "updated_at": "2026-09-03T13:01:38.232845+00:00",
     "history": [
       {
         "status": "QUEUED",
@@ -112389,6 +112464,11 @@
         "status": "FAILED_publish",
         "at": "2026-09-03T12:48:48.161261+00:00",
         "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260825_1400_long_caef0f/20260825_1400_long_caef0f_titled.mp4'"
+      },
+      {
+        "status": "FAILED_publish",
+        "at": "2026-09-03T13:01:38.232865+00:00",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260825_1400_long_caef0f/20260825_1400_long_caef0f_titled.mp4'"
       }
     ],
     "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260825_1400_long_caef0f/20260825_1400_long_caef0f_titled.mp4'",
@@ -112481,7 +112561,7 @@
     "mood": "happy",
     "status": "FAILED_publish",
     "created_at": "2026-08-25T14:31:19.253870+00:00",
-    "updated_at": "2026-09-03T12:48:48.298552+00:00",
+    "updated_at": "2026-09-03T13:01:38.420180+00:00",
     "history": [
       {
         "status": "QUEUED",
@@ -116727,6 +116807,11 @@
         "status": "FAILED_publish",
         "at": "2026-09-03T12:48:48.298574+00:00",
         "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260825_2000_short_02669b/20260825_2000_short_02669b_short.mp4'"
+      },
+      {
+        "status": "FAILED_publish",
+        "at": "2026-09-03T13:01:38.420197+00:00",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260825_2000_short_02669b/20260825_2000_short_02669b_short.mp4'"
       }
     ],
     "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260825_2000_short_02669b/20260825_2000_short_02669b_short.mp4'",
@@ -116819,7 +116904,7 @@
     "mood": "happy",
     "status": "FAILED_publish",
     "created_at": "2026-08-26T00:31:19.294329+00:00",
-    "updated_at": "2026-09-03T12:48:48.502583+00:00",
+    "updated_at": "2026-09-03T13:01:38.606519+00:00",
     "history": [
       {
         "status": "QUEUED",
@@ -120870,6 +120955,11 @@
         "status": "FAILED_publish",
         "at": "2026-09-03T12:48:48.502605+00:00",
         "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260826_0600_long_b93c53/20260826_0600_long_b93c53_titled.mp4'"
+      },
+      {
+        "status": "FAILED_publish",
+        "at": "2026-09-03T13:01:38.606538+00:00",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260826_0600_long_b93c53/20260826_0600_long_b93c53_titled.mp4'"
       }
     ],
     "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260826_0600_long_b93c53/20260826_0600_long_b93c53_titled.mp4'",
@@ -120962,7 +121052,7 @@
     "mood": "happy",
     "status": "FAILED_publish",
     "created_at": "2026-08-26T04:31:20.235534+00:00",
-    "updated_at": "2026-09-03T12:48:48.706761+00:00",
+    "updated_at": "2026-09-03T13:01:38.789820+00:00",
     "history": [
       {
         "status": "QUEUED",
@@ -124938,6 +125028,11 @@
         "status": "FAILED_publish",
         "at": "2026-09-03T12:48:48.706780+00:00",
         "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260826_1000_long_5e3055/20260826_1000_long_5e3055_titled.mp4'"
+      },
+      {
+        "status": "FAILED_publish",
+        "at": "2026-09-03T13:01:38.789838+00:00",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260826_1000_long_5e3055/20260826_1000_long_5e3055_titled.mp4'"
       }
     ],
     "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260826_1000_long_5e3055/20260826_1000_long_5e3055_titled.mp4'",
@@ -125030,7 +125125,7 @@
     "mood": "happy",
     "status": "FAILED_publish",
     "created_at": "2026-08-28T04:31:22.712571+00:00",
-    "updated_at": "2026-09-03T12:48:48.926366+00:00",
+    "updated_at": "2026-09-03T13:01:38.972264+00:00",
     "history": [
       {
         "status": "QUEUED",
@@ -128001,6 +128096,11 @@
         "status": "FAILED_publish",
         "at": "2026-09-03T12:48:48.926384+00:00",
         "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260828_1000_long_7bda7b/20260828_1000_long_7bda7b_titled.mp4'"
+      },
+      {
+        "status": "FAILED_publish",
+        "at": "2026-09-03T13:01:38.972282+00:00",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260828_1000_long_7bda7b/20260828_1000_long_7bda7b_titled.mp4'"
       }
     ],
     "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260828_1000_long_7bda7b/20260828_1000_long_7bda7b_titled.mp4'",
@@ -128093,7 +128193,7 @@
     "mood": "happy",
     "status": "FAILED_publish",
     "created_at": "2026-08-28T08:31:18.400722+00:00",
-    "updated_at": "2026-09-03T12:48:49.184559+00:00",
+    "updated_at": "2026-09-03T13:01:39.155419+00:00",
     "history": [
       {
         "status": "QUEUED",
@@ -130989,6 +131089,11 @@
         "status": "FAILED_publish",
         "at": "2026-09-03T12:48:49.184578+00:00",
         "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260828_1400_long_4accac/20260828_1400_long_4accac_titled.mp4'"
+      },
+      {
+        "status": "FAILED_publish",
+        "at": "2026-09-03T13:01:39.155438+00:00",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260828_1400_long_4accac/20260828_1400_long_4accac_titled.mp4'"
       }
     ],
     "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260828_1400_long_4accac/20260828_1400_long_4accac_titled.mp4'",
@@ -131081,7 +131186,7 @@
     "mood": "happy",
     "status": "FAILED_publish",
     "created_at": "2026-08-28T10:31:12.737048+00:00",
-    "updated_at": "2026-09-03T12:48:49.327764+00:00",
+    "updated_at": "2026-09-03T13:01:39.347311+00:00",
     "history": [
       {
         "status": "QUEUED",
@@ -133942,6 +134047,11 @@
         "status": "FAILED_publish",
         "at": "2026-09-03T12:48:49.327782+00:00",
         "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260828_1600_short_137b0d/20260828_1600_short_137b0d_short.mp4'"
+      },
+      {
+        "status": "FAILED_publish",
+        "at": "2026-09-03T13:01:39.347329+00:00",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260828_1600_short_137b0d/20260828_1600_short_137b0d_short.mp4'"
       }
     ],
     "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260828_1600_short_137b0d/20260828_1600_short_137b0d_short.mp4'",
@@ -134034,7 +134144,7 @@
     "mood": "happy",
     "status": "FAILED_publish",
     "created_at": "2026-08-30T12:31:14.968007+00:00",
-    "updated_at": "2026-09-03T12:48:49.462724+00:00",
+    "updated_at": "2026-09-03T13:01:39.533899+00:00",
     "history": [
       {
         "status": "QUEUED",
@@ -135900,6 +136010,11 @@
         "status": "FAILED_publish",
         "at": "2026-09-03T12:48:49.462741+00:00",
         "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260830_1800_long_f366c5/20260830_1800_long_f366c5_titled.mp4'"
+      },
+      {
+        "status": "FAILED_publish",
+        "at": "2026-09-03T13:01:39.533917+00:00",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260830_1800_long_f366c5/20260830_1800_long_f366c5_titled.mp4'"
       }
     ],
     "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260830_1800_long_f366c5/20260830_1800_long_f366c5_titled.mp4'",
@@ -135992,7 +136107,7 @@
     "mood": "happy",
     "status": "FAILED_publish",
     "created_at": "2026-08-30T14:31:12.905381+00:00",
-    "updated_at": "2026-09-03T12:48:49.621910+00:00",
+    "updated_at": "2026-09-03T13:01:39.719073+00:00",
     "history": [
       {
         "status": "QUEUED",
@@ -137823,6 +137938,11 @@
         "status": "FAILED_publish",
         "at": "2026-09-03T12:48:49.621925+00:00",
         "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260830_2000_short_017306/20260830_2000_short_017306_short.mp4'"
+      },
+      {
+        "status": "FAILED_publish",
+        "at": "2026-09-03T13:01:39.719120+00:00",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260830_2000_short_017306/20260830_2000_short_017306_short.mp4'"
       }
     ],
     "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260830_2000_short_017306/20260830_2000_short_017306_short.mp4'",
@@ -137915,7 +138035,7 @@
     "mood": "happy",
     "status": "FAILED_publish",
     "created_at": "2026-08-31T00:31:10.727363+00:00",
-    "updated_at": "2026-09-03T12:48:49.821333+00:00",
+    "updated_at": "2026-09-03T13:01:39.918203+00:00",
     "history": [
       {
         "status": "QUEUED",
@@ -139551,6 +139671,11 @@
         "status": "FAILED_publish",
         "at": "2026-09-03T12:48:49.821347+00:00",
         "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260831_0600_long_43b160/20260831_0600_long_43b160_titled.mp4'"
+      },
+      {
+        "status": "FAILED_publish",
+        "at": "2026-09-03T13:01:39.918223+00:00",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260831_0600_long_43b160/20260831_0600_long_43b160_titled.mp4'"
       }
     ],
     "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260831_0600_long_43b160/20260831_0600_long_43b160_titled.mp4'",
@@ -139643,7 +139768,7 @@
     "mood": "happy",
     "status": "FAILED_publish",
     "created_at": "2026-08-31T06:31:20.759394+00:00",
-    "updated_at": "2026-09-03T12:48:49.944142+00:00",
+    "updated_at": "2026-09-03T13:01:40.101544+00:00",
     "history": [
       {
         "status": "QUEUED",
@@ -141164,6 +141289,11 @@
         "status": "FAILED_publish",
         "at": "2026-09-03T12:48:49.944161+00:00",
         "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260831_1200_short_73c9e7/20260831_1200_short_73c9e7_short.mp4'"
+      },
+      {
+        "status": "FAILED_publish",
+        "at": "2026-09-03T13:01:40.101564+00:00",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260831_1200_short_73c9e7/20260831_1200_short_73c9e7_short.mp4'"
       }
     ],
     "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260831_1200_short_73c9e7/20260831_1200_short_73c9e7_short.mp4'",
@@ -141256,7 +141386,7 @@
     "mood": "happy",
     "status": "FAILED_publish",
     "created_at": "2026-08-31T10:31:14.165111+00:00",
-    "updated_at": "2026-09-03T12:48:50.076068+00:00",
+    "updated_at": "2026-09-03T13:01:40.285753+00:00",
     "history": [
       {
         "status": "QUEUED",
@@ -142702,6 +142832,11 @@
         "status": "FAILED_publish",
         "at": "2026-09-03T12:48:50.076087+00:00",
         "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260831_1600_short_8eb5b6/20260831_1600_short_8eb5b6_short.mp4'"
+      },
+      {
+        "status": "FAILED_publish",
+        "at": "2026-09-03T13:01:40.285770+00:00",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260831_1600_short_8eb5b6/20260831_1600_short_8eb5b6_short.mp4'"
       }
     ],
     "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260831_1600_short_8eb5b6/20260831_1600_short_8eb5b6_short.mp4'",
@@ -142794,7 +142929,7 @@
     "mood": "happy",
     "status": "FAILED_publish",
     "created_at": "2026-08-31T12:31:19.433731+00:00",
-    "updated_at": "2026-09-03T12:48:50.233713+00:00",
+    "updated_at": "2026-09-03T13:01:40.475371+00:00",
     "history": [
       {
         "status": "QUEUED",
@@ -144205,6 +144340,11 @@
         "status": "FAILED_publish",
         "at": "2026-09-03T12:48:50.233736+00:00",
         "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260831_1800_long_729151/20260831_1800_long_729151_titled.mp4'"
+      },
+      {
+        "status": "FAILED_publish",
+        "at": "2026-09-03T13:01:40.475390+00:00",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260831_1800_long_729151/20260831_1800_long_729151_titled.mp4'"
       }
     ],
     "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260831_1800_long_729151/20260831_1800_long_729151_titled.mp4'",
@@ -144297,7 +144437,7 @@
     "mood": "happy",
     "status": "FAILED_publish",
     "created_at": "2026-08-31T14:31:22.902651+00:00",
-    "updated_at": "2026-09-03T12:48:50.475729+00:00",
+    "updated_at": "2026-09-03T13:01:40.664025+00:00",
     "history": [
       {
         "status": "QUEUED",
@@ -145673,6 +145813,11 @@
         "status": "FAILED_publish",
         "at": "2026-09-03T12:48:50.475749+00:00",
         "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260831_2000_short_148cbb/20260831_2000_short_148cbb_short.mp4'"
+      },
+      {
+        "status": "FAILED_publish",
+        "at": "2026-09-03T13:01:40.664044+00:00",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260831_2000_short_148cbb/20260831_2000_short_148cbb_short.mp4'"
       }
     ],
     "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260831_2000_short_148cbb/20260831_2000_short_148cbb_short.mp4'",
@@ -145765,7 +145910,7 @@
     "mood": "happy",
     "status": "FAILED_publish",
     "created_at": "2026-09-01T04:31:18.305920+00:00",
-    "updated_at": "2026-09-03T12:48:50.620684+00:00",
+    "updated_at": "2026-09-03T13:01:40.851399+00:00",
     "history": [
       {
         "status": "QUEUED",
@@ -146866,6 +147011,11 @@
         "status": "FAILED_publish",
         "at": "2026-09-03T12:48:50.620700+00:00",
         "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260901_1000_long_b77c5d/20260901_1000_long_b77c5d_titled.mp4'"
+      },
+      {
+        "status": "FAILED_publish",
+        "at": "2026-09-03T13:01:40.851418+00:00",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260901_1000_long_b77c5d/20260901_1000_long_b77c5d_titled.mp4'"
       }
     ],
     "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260901_1000_long_b77c5d/20260901_1000_long_b77c5d_titled.mp4'",
@@ -146958,7 +147108,7 @@
     "mood": "happy",
     "status": "FAILED_publish",
     "created_at": "2026-09-01T12:31:25.443169+00:00",
-    "updated_at": "2026-09-03T12:48:50.752765+00:00",
+    "updated_at": "2026-09-03T13:01:41.035274+00:00",
     "history": [
       {
         "status": "QUEUED",
@@ -147904,6 +148054,11 @@
         "status": "FAILED_publish",
         "at": "2026-09-03T12:48:50.752783+00:00",
         "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260901_1800_long_56eddc/20260901_1800_long_56eddc_titled.mp4'"
+      },
+      {
+        "status": "FAILED_publish",
+        "at": "2026-09-03T13:01:41.035292+00:00",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260901_1800_long_56eddc/20260901_1800_long_56eddc_titled.mp4'"
       }
     ],
     "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260901_1800_long_56eddc/20260901_1800_long_56eddc_titled.mp4'",
@@ -147996,7 +148151,7 @@
     "mood": "happy",
     "status": "FAILED_publish",
     "created_at": "2026-09-01T14:31:13.315195+00:00",
-    "updated_at": "2026-09-03T12:48:50.889691+00:00",
+    "updated_at": "2026-09-03T13:01:41.218325+00:00",
     "history": [
       {
         "status": "QUEUED",
@@ -148907,6 +149062,11 @@
         "status": "FAILED_publish",
         "at": "2026-09-03T12:48:50.889714+00:00",
         "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260901_2000_short_42bf43/20260901_2000_short_42bf43_short.mp4'"
+      },
+      {
+        "status": "FAILED_publish",
+        "at": "2026-09-03T13:01:41.218344+00:00",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260901_2000_short_42bf43/20260901_2000_short_42bf43_short.mp4'"
       }
     ],
     "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260901_2000_short_42bf43/20260901_2000_short_42bf43_short.mp4'",
@@ -148999,7 +149159,7 @@
     "mood": "happy",
     "status": "FAILED_publish",
     "created_at": "2026-09-02T00:31:23.827894+00:00",
-    "updated_at": "2026-09-03T12:48:51.018992+00:00",
+    "updated_at": "2026-09-03T13:01:41.402723+00:00",
     "history": [
       {
         "status": "QUEUED",
@@ -149715,6 +149875,11 @@
         "status": "FAILED_publish",
         "at": "2026-09-03T12:48:51.019014+00:00",
         "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260902_0600_long_6fe23a/20260902_0600_long_6fe23a_titled.mp4'"
+      },
+      {
+        "status": "FAILED_publish",
+        "at": "2026-09-03T13:01:41.402743+00:00",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260902_0600_long_6fe23a/20260902_0600_long_6fe23a_titled.mp4'"
       }
     ],
     "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260902_0600_long_6fe23a/20260902_0600_long_6fe23a_titled.mp4'",
@@ -149807,7 +149972,7 @@
     "mood": "happy",
     "status": "FAILED_publish",
     "created_at": "2026-09-02T02:31:30.683842+00:00",
-    "updated_at": "2026-09-03T12:48:51.172600+00:00",
+    "updated_at": "2026-09-03T13:01:41.593788+00:00",
     "history": [
       {
         "status": "QUEUED",
@@ -150488,6 +150653,11 @@
         "status": "FAILED_publish",
         "at": "2026-09-03T12:48:51.172623+00:00",
         "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260902_0800_short_768265/20260902_0800_short_768265_short.mp4'"
+      },
+      {
+        "status": "FAILED_publish",
+        "at": "2026-09-03T13:01:41.593807+00:00",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260902_0800_short_768265/20260902_0800_short_768265_short.mp4'"
       }
     ],
     "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260902_0800_short_768265/20260902_0800_short_768265_short.mp4'",
@@ -150580,7 +150750,7 @@
     "mood": "happy",
     "status": "FAILED_publish",
     "created_at": "2026-09-02T06:31:19.516168+00:00",
-    "updated_at": "2026-09-03T12:48:51.295279+00:00",
+    "updated_at": "2026-09-03T13:01:41.781155+00:00",
     "history": [
       {
         "status": "QUEUED",
@@ -151186,6 +151356,11 @@
         "status": "FAILED_publish",
         "at": "2026-09-03T12:48:51.295297+00:00",
         "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260902_1200_short_f6784e/20260902_1200_short_f6784e_short.mp4'"
+      },
+      {
+        "status": "FAILED_publish",
+        "at": "2026-09-03T13:01:41.781175+00:00",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260902_1200_short_f6784e/20260902_1200_short_f6784e_short.mp4'"
       }
     ],
     "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260902_1200_short_f6784e/20260902_1200_short_f6784e_short.mp4'",
@@ -151278,7 +151453,7 @@
     "mood": "happy",
     "status": "FAILED_publish",
     "created_at": "2026-09-02T14:31:26.708526+00:00",
-    "updated_at": "2026-09-03T12:48:51.417124+00:00",
+    "updated_at": "2026-09-03T13:01:41.969515+00:00",
     "history": [
       {
         "status": "QUEUED",
@@ -151729,6 +151904,11 @@
         "status": "FAILED_publish",
         "at": "2026-09-03T12:48:51.417144+00:00",
         "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260902_2000_short_ad8e99/20260902_2000_short_ad8e99_short.mp4'"
+      },
+      {
+        "status": "FAILED_publish",
+        "at": "2026-09-03T13:01:41.969533+00:00",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260902_2000_short_ad8e99/20260902_2000_short_ad8e99_short.mp4'"
       }
     ],
     "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260902_2000_short_ad8e99/20260902_2000_short_ad8e99_short.mp4'",
@@ -151821,7 +152001,7 @@
     "mood": "happy",
     "status": "FAILED_publish",
     "created_at": "2026-09-03T00:31:11.766281+00:00",
-    "updated_at": "2026-09-03T12:48:51.603494+00:00",
+    "updated_at": "2026-09-03T13:01:42.156442+00:00",
     "history": [
       {
         "status": "QUEUED",
@@ -152077,6 +152257,11 @@
         "status": "FAILED_publish",
         "at": "2026-09-03T12:48:51.603512+00:00",
         "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260903_0600_long_5c8c9a/20260903_0600_long_5c8c9a_titled.mp4'"
+      },
+      {
+        "status": "FAILED_publish",
+        "at": "2026-09-03T13:01:42.156462+00:00",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260903_0600_long_5c8c9a/20260903_0600_long_5c8c9a_titled.mp4'"
       }
     ],
     "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260903_0600_long_5c8c9a/20260903_0600_long_5c8c9a_titled.mp4'",
@@ -152169,7 +152354,7 @@
     "mood": "happy",
     "status": "FAILED_assemble",
     "created_at": "2026-09-03T08:31:17.166004+00:00",
-    "updated_at": "2026-09-03T12:48:44.920309+00:00",
+    "updated_at": "2026-09-03T13:01:35.152506+00:00",
     "history": [
       {
         "status": "QUEUED",
@@ -152266,6 +152451,11 @@
         "status": "FAILED_assemble",
         "at": "2026-09-03T12:48:44.920329+00:00",
         "error": "CalledProcessError: Command '['ffmpeg', '-y', '-i', '/tmp/kiddu_pipeline/video/20260903_1400_long_8a7098/20260903_1400_long_8a7098_silent_video.mp4', '-i', '/tmp/kiddu_pipeline/music/20260903_1400_long_8a7098/20260903_1400_long_8a7098_final_song.wav', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '192k', '-shortest', '/tmp/kiddu_pipeline/final/20260903_1400_long_8a7098/20260903_1400_long_8a7098_merged.mp4']' returned non-zero exit status 254."
+      },
+      {
+        "status": "FAILED_assemble",
+        "at": "2026-09-03T13:01:35.152531+00:00",
+        "error": "CalledProcessError: Command '['ffmpeg', '-y', '-i', '/tmp/kiddu_pipeline/video/20260903_1400_long_8a7098/20260903_1400_long_8a7098_silent_video.mp4', '-i', '/tmp/kiddu_pipeline/music/20260903_1400_long_8a7098/20260903_1400_long_8a7098_final_song.wav', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '192k', '-shortest', '/tmp/kiddu_pipeline/final/20260903_1400_long_8a7098/20260903_1400_long_8a7098_merged.mp4']' returned non-zero exit status 254."
       }
     ],
     "error": "CalledProcessError: Command '['ffmpeg', '-y', '-i', '/tmp/kiddu_pipeline/video/20260903_1400_long_8a7098/20260903_1400_long_8a7098_silent_video.mp4', '-i', '/tmp/kiddu_pipeline/music/20260903_1400_long_8a7098/20260903_1400_long_8a7098_final_song.wav', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '192k', '-shortest', '/tmp/kiddu_pipeline/final/20260903_1400_long_8a7098/20260903_1400_long_8a7098_merged.mp4']' returned non-zero exit status 254.",
@@ -152356,7 +152546,7 @@
     "mood": "happy",
     "status": "FAILED_publish",
     "created_at": "2026-09-03T12:31:34.550287+00:00",
-    "updated_at": "2026-09-03T12:48:45.265100+00:00",
+    "updated_at": "2026-09-03T13:01:42.343245+00:00",
     "history": [
       {
         "status": "QUEUED",
@@ -152382,9 +152572,14 @@
         "status": "FAILED_publish",
         "at": "2026-09-03T12:48:45.265121+00:00",
         "error": "RefreshError: ('invalid_grant: Bad Request', {'error': 'invalid_grant', 'error_description': 'Bad Request'})"
+      },
+      {
+        "status": "FAILED_publish",
+        "at": "2026-09-03T13:01:42.343264+00:00",
+        "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260903_1800_long_76515e/20260903_1800_long_76515e_titled.mp4'"
       }
     ],
-    "error": "RefreshError: ('invalid_grant: Bad Request', {'error': 'invalid_grant', 'error_description': 'Bad Request'})",
+    "error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/kiddu_pipeline/final/20260903_1800_long_76515e/20260903_1800_long_76515e_titled.mp4'",
     "data": {
       "script": {
         "title": "Chintu की मस्ती भरी कहानी",
